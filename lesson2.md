@@ -14,7 +14,6 @@
 	1. dom methods, arguments
 	1. convert to real array
 	1. loop
-
 #New
 1. String
 	1. readonly array-like objects, immutable
