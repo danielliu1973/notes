@@ -1,5 +1,5 @@
 1. IDE
-	1. Brackets: [http://brackets.io/] I'm using it. Recommended.
+	1. Brackets: [http://brackets.io/](http://brackets.io/){:target="_blank"} I'm using it. Recommended.
 	1. WebStorm: [https://www.jetbrains.com/webstorm/]() It's the best, but you'll need a license.
 	1. Eclipse: [http://eclipse.org/webtools/]() not bad. Used to be very popular.
 1. VCS
