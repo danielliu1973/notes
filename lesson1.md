@@ -35,14 +35,13 @@
 		1. create object
 			1. {}
 			javascript.js:
-			var person = {};
-			var person = {
-			    name: ‘Tom’,
-			    age: 14,
-			    talk: function() {
-			    }
-			};
-			
+				var person = {};
+				var person = {
+					name: ‘Tom’,
+					age: 14,
+					talk: function() {
+					}
+				};
 			1. new Object();
 			1. Object.create();
 		1. JSON: serialization
