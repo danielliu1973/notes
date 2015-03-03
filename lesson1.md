@@ -35,6 +35,7 @@
 		1. create object
 			1. {}
 			javascript.js:
+
 				var person = {};
 				var person = {
 					name: ‘Tom’,
