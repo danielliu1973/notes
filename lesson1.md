@@ -33,86 +33,86 @@
 	1. Object: dynamic, HashMap
 		1. built-in objects. JSON, Math, Date, RegExp, Object, String, Number, Array, Function etc.
 		1. create object
-'''javascript
-{}
-var person = { };
-var person = {
-    name: ‘Tom’,
-    age: 14,
-    talk: function() {
-    }
-};
-'''
-new Object();
-Object.create();
-JSON: serialization
-retrieval & set
-property name: $, _, a-z, A-Z, 0-9
-person.name, person[‘name’]
-delete property vs set undefined
-configurable
-enumeration
-in
-for in
-Object.keys
-Misc
-namespace: avoid global variables
-window, global
-doc only /** ... */
-Array
-special object
-automatically maintain length property
-iteration
-for (var i=0; i<length; i++) { }
-while(length--) { }
-for (i in array) { }
-forEach
-methods
-isArray: static
-push
-concat
-sort: unstable
-indexOf/lastIndexOf
-slice: clone
-splice
-insert & delete
-difference from delete
-join/reverse/pop/reduce
-Array-Like Objects
-dom methods, arguments
-convert to real array
-String
-readonly array-like objects
-array methods on string
-new String() vs ""
-methods
-Function
-constructor class
-define functions
-function foo() {}
-var foo = function() {}
-(function() {})()
-hoisting
-scope
-what’s this?
-change scope
-function.call/apply(obj, arg)
-obj.foo = func;
-arguments
-callee/caller
-closure
-prototype
-Misc
-===, !==
-number: float 0.1+0.2 != 0.3
-CSS
-style
-class
-css selector
-pseudo class & pseudo element
-layout
-display property
-position property
-box model
-css3
+			1. {}
+			```javascript
+			var person = {};
+			var person = {
+			    name: ‘Tom’,
+			    age: 14,
+			    talk: function() {
+			    }
+			};
+			```
+			1. new Object();
+			1. Object.create();
+		1. JSON: serialization
+		1. retrieval & set
+			1. property name: $, _, a-z, A-Z, 0-9
+			1. person.name, person[‘name’]
+		1. delete property vs set undefined
+			1. configurable
+		1. enumeration
+			1. in
+			1. for in
+			1. Object.keys
+		1. Misc
+			1. namespace: avoid global variables
+			1. window, global
+			1. doc only /** ... */
+	1. Array
+		1. special object
+		1. automatically maintain length property
+		1. iteration
+			1. for (var i=0; i<length; i++) { }
+			1. while(length--) { }
+			1. for (i in array) { }
+			1. forEach
+		1. methods
+			1. isArray: static
+			1. push
+			1. concat
+			1. sort: unstable
+			1. indexOf/lastIndexOf
+			1. slice: clone
+			1. splice
+				1. insert & delete
+				1. difference from delete
+			1. join/reverse/pop/reduce
+		1. Array-Like Objects
+			1. dom methods, arguments
+			1. convert to real array
+	1. String
+		1. readonly array-like objects
+		1. array methods on string
+		1. new String() vs ""
+		1. methods
+	1. Function
+		1. constructor class
+		1. define functions
+			1. function foo() {}
+			1. var foo = function() {}
+			1. (function() {})()
+		1. hoisting
+		1. scope
+			1. what’s this?
+			1. change scope
+				1. function.call/apply(obj, arg)
+				1. obj.foo = func;
+		1. arguments
+			1. callee/caller
+		1. closure
+		1. prototype
+	1. Misc
+		1. ===, !==
+		1. number: float 0.1+0.2 != 0.3
+1. CSS
+	1. style
+	1. class
+	1. css selector
+	1. pseudo class & pseudo element
+	1. layout
+	1. display property
+	1. position property
+	1. box model
+	1. css3
 
