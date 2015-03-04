@@ -1,10 +1,10 @@
 1. You have the following JavaScript code. Write the appropriate HTML so all three statements are equivalent (will bring the same value).
 
-	```
-		document.forms["myForm"].elements["myField"].value
-		document.forms[1].elements[1].value
-		document.myForm.myField.value
-	```
+```
+	document.forms["myForm"].elements["myField"].value
+	document.forms[1].elements[1].value
+	document.myForm.myField.value
+```
 
 1. Read the API on object String and Array.
 	[http://docs.sencha.com/extjs/4.2.1/#!/api/String](http://docs.sencha.com/extjs/4.2.1/#!/api/String)
@@ -36,9 +36,9 @@
 
 1. Implement the following function. It should return the sum of the two numbers:
 
-	```
-    	sum(3)(4); // returns 7
-	```
+```
+	sum(3)(4); // returns 7
+```
 
 1. Tell me what the function below does. Do you see the bug?
 ```
