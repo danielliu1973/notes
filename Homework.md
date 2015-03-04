@@ -25,14 +25,14 @@
 
 1. Implement the following function. It should return the sum of the two numbers.
 
-	```
+	<code>
 	sum(3)(4); // returns 7
-	```
+	</code>
 	
 1. Tell me what the function below does. Do you see the bug?
 
-	```
+	<pre>
 	function foo(arr) {		var max1 = -Infinity, max2 = -Infinity;		arr.forEach(function(num) {			if (num > Math.min(max1, max2)) {				if (max1 < max2) {					max1 = num;
 									} else {					max2 = num;				}			}		});
-			return (Math.min(max1, max2));	}
-	```
+		return (Math.min(max1, max2));	}
+	</pre>
