@@ -32,7 +32,19 @@
             // Send the request to send-ajax-data.php
             xhr.send(null);
 
+            Ext.Ajax.request({
+                url: 'page.php',
+                params: {
+                    id: 1
+                },
+                success: function(response){
+                    var text = response.responseText;
+                    // process server response here
+                }
+            });
+
     1. get vs post
+
 1. ExtJS
     1. History
     1. Element & Container
