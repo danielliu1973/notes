@@ -1,9 +1,9 @@
 1. You have the following JavaScript code. Write the appropriate HTML so all three statements are equivalent (will bring the same value).
 
 ```
-document.forms["myForm"].elements["myField"].value
-document.forms[1].elements[1].value
-document.myForm.myField.value
+	document.forms["myForm"].elements["myField"].value
+	document.forms[1].elements[1].value
+	document.myForm.myField.value
 ```
 
 1. Read the API on object String and Array.
@@ -39,8 +39,7 @@ document.myForm.myField.value
     sum(3)(4); // returns 7
 	
 1. Tell me what the function below does. Do you see the bug?
-    code:
-
+```
 	function foo(arr) {
 		var max1 = -Infinity, max2 = -Infinity;
 		arr.forEach(function(num) {
@@ -54,3 +53,4 @@ document.myForm.myField.value
 		});
 		return (Math.min(max1, max2));
 	}
+```
