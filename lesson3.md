@@ -3,6 +3,8 @@
     1. hoisting
     1. scope
     1. context
+        1. this
+        1. new
 1. MVC
 #New
 1. Function
