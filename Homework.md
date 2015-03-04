@@ -34,9 +34,9 @@
 	test();
 	```
 
-1. Implement the following function. It should return the sum of the two numbers.
+1. Implement the following function. It should return the sum of the two numbers:
 
-	sum(3)(4); // returns 7
+    sum(3)(4); // returns 7
 	
 1. Tell me what the function below does. Do you see the bug?
 
