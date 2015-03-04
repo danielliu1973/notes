@@ -31,6 +31,7 @@
 	1. prototype
 1. MVC
 1. ExtJS
+	1. [http://www.extjs-tutorial.com/extjs/naming-convention](http://www.extjs-tutorial.com/extjs/naming-convention)
 	1. Examples:
 		1. Forms, ComboBox, Grids, Windows, Layout Managers, Toolbars and Menus
 		1. DataView
