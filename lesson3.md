@@ -10,39 +10,56 @@
     1. prototype
 1. Basics
     1. ajax
-            // This is the client-side script.
+        1. vanilla javascript
+
+                // Initialize the Ajax request.
+                var xhr = new XMLHttpRequest();
+                xhr.open('get', 'send-ajax-data.php');
  
-            // Initialize the Ajax request.
-            var xhr = new XMLHttpRequest();
-            xhr.open('get', 'send-ajax-data.php');
- 
-            // Track the state changes of the request.
-            xhr.onreadystatechange = function () {
-                var DONE = 4; // readyState 4 means the request is done.
-                var OK = 200; // status 200 is a successful return.
-                if (xhr.readyState === DONE) {
-                    if (xhr.status === OK) {
-                        alert(xhr.responseText); // 'This is the returned text.'
-                    } else {
-                        alert('Error: ' + xhr.status); // An error occurred during the request.
+                // Track the state changes of the request.
+                xhr.onreadystatechange = function () {
+                    var DONE = 4; // readyState 4 means the request is done.
+                    var OK = 200; // status 200 is a successful return.
+                    if (xhr.readyState === DONE) {
+                        if (xhr.status === OK) {
+                            alert(xhr.responseText); // 'This is the returned text.'
+                        } else {
+                            alert('Error: ' + xhr.status); // An error occurred during the request.
+                        }
                     }
-                }
-            };
+                };
  
-            // Send the request to send-ajax-data.php
-            xhr.send(null);
+                // Send the request to send-ajax-data.php
+                xhr.send(null);
 
-            Ext.Ajax.request({
-                url: 'page.php',
-                params: {
-                    id: 1
-                },
-                success: function(response){
-                    var text = response.responseText;
-                    // process server response here
-                }
-            });
+        1. ExtJS
 
+                Ext.Ajax.request({
+                    url: 'ajax_demo/sample.json',
+                    params: {
+                        key: value
+                    },
+                    success: function(response, opts) {
+                        var obj = Ext.decode(response.responseText);
+                        console.dir(obj);
+                    },
+                    failure: function(response, opts) {
+                        console.log('server-side failure with status code ' + response.status);
+                    }
+                });
+
+        1. AngularJS
+                // Simple POST request example (passing data) :
+                $http.post('/someUrl', {msg:'hello word!'}).
+                  success(function(data, status, headers, config) {
+                    // this callback will be called asynchronously
+                    // when the response is available
+                  }).
+                  error(function(data, status, headers, config) {
+                    // called asynchronously if an error occurs
+                    // or server returns response with an error status.
+                  });
+  
     1. get vs post
 
 1. ExtJS
