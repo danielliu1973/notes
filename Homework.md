@@ -2,7 +2,6 @@
 
 ```
 document.forms["myForm"].elements["myField"].value
-
 document.forms[1].elements[1].value
 document.myForm.myField.value
 ```
@@ -17,7 +16,7 @@ document.myForm.myField.value
 
 	[http://ryanmorr.com/understanding-scope-and-context-in-javascript/](http://ryanmorr.com/understanding-scope-and-context-in-javascript/)
 
-	```
+```
 	var myObject = {
 		foo: "bar",
 		func: function() {
