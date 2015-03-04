@@ -17,6 +17,20 @@
                 }
 
     1. prototype
+        1. [http://www.w3schools.com/js/js_object_prototypes.asp](http://www.w3schools.com/js/js_object_prototypes.asp)
+        1. [http://openwares.net/js/javascript_prototype_chain.html](http://openwares.net/js/javascript_prototype_chain.html)
+        1. [http://javascript.crockford.com/prototypal.html](http://javascript.crockford.com/prototypal.html)
+
+                function person(first, last, age, eyecolor) {
+                    this.firstName = first;
+                    this.lastName = last;
+                    this.age = age;
+                    this.eyeColor = eyecolor;
+                }
+                person.prototype.name = function() {
+                    return this.firstName + " " + this.lastName;
+                };
+
 1. Basics
     1. ajax
         1. vanilla javascript
