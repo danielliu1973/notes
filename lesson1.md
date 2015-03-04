@@ -42,6 +42,7 @@
 			1. {}
 				```
 				var person = {};
+				
 				var person = {
 					name: ‘Tom’,
 					age: 14,
