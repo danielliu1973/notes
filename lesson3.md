@@ -7,6 +7,7 @@
 #New
 1. Function
     1. closure
+        1. [http://www.w3schools.com/js/js_function_closures.asp](http://www.w3schools.com/js/js_function_closures.asp)
     1. prototype
 1. Basics
     1. ajax
@@ -32,6 +33,7 @@
                 // Send the request to send-ajax-data.php
                 xhr.send(null);
 
+
         1. ExtJS
 
                 Ext.Ajax.request({
@@ -48,6 +50,7 @@
                     }
                 });
 
+
         1. AngularJS
 
                 // Simple POST request example (passing data) :
@@ -60,8 +63,9 @@
                     // called asynchronously if an error occurs
                     // or server returns response with an error status.
                   });
-  
-    1. get vs post
+ 
+ 
+      1. get vs post
 
 1. ExtJS
     1. History
