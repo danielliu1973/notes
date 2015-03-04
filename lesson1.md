@@ -49,6 +49,7 @@
 					talk: function() { }
 				};
 			```
+
 			1. new Object();
 			1. Object.create();
 		1. JSON: serialization
