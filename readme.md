@@ -35,9 +35,11 @@
 	```
 
 1. Implement the following function. It should return the sum of the two numbers:
-<pre>
+
+	```
     sum(3)(4); // returns 7
-</pre>
+	```
+
 1. Tell me what the function below does. Do you see the bug?
 
 	function foo(arr) {
