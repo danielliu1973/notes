@@ -15,6 +15,7 @@
                         return x + y;
                     }
                 }
+
     1. prototype
 1. Basics
     1. ajax
