@@ -39,6 +39,7 @@
 	```
     	sum(3)(4); // returns 7
 	```
+
 1. Tell me what the function below does. Do you see the bug?
 ```
 	function foo(arr) {
