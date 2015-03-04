@@ -32,7 +32,7 @@
 	myObject.func();
 	var test = myObject.func;
 	test();
-	```
+```
 
 1. Implement the following function. It should return the sum of the two numbers:
 
