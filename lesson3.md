@@ -21,13 +21,13 @@
         1. [http://openwares.net/js/javascript_prototype_chain.html](http://openwares.net/js/javascript_prototype_chain.html)
         1. [http://javascript.crockford.com/prototypal.html](http://javascript.crockford.com/prototypal.html)
 
-                function person(first, last, age, eyecolor) {
+                function Person(first, last, age, eyecolor) {
                     this.firstName = first;
                     this.lastName = last;
                     this.age = age;
                     this.eyeColor = eyecolor;
                 }
-                person.prototype.name = function() {
+                Person.prototype.getFullName = function() {
                     return this.firstName + " " + this.lastName;
                 };
 
