@@ -40,7 +40,6 @@
 		1. built-in objects. JSON, Math, Date, RegExp, Object, String, Number, Array, Function etc.
 		1. create object
 			1. {}
-
 				```
 					var person = {};			
 					var person = {
@@ -49,12 +48,12 @@
 						talk: function() { }
 					};
 				```
-
 			1. new Object();
 			1. Object.create();
 		1. JSON: serialization
 		1. retrieval & set
 			1. property name: $, _, a-z, A-Z, 0-9
+			
 			1. person.name, person[‘name’]
 		1. delete property vs set undefined
 			1. configurable
