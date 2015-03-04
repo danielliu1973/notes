@@ -17,6 +17,10 @@
 		- [http://en.wikipedia.org/wiki/Web_browser_engine](http://en.wikipedia.org/wiki/Web_browser_engine)
 		- [http://baike.baidu.com/view/1369399.htm](http://baike.baidu.com/view/1369399.htm)
 	1. mobile: webkit only
+1. Resources
+	1. [http://www.w3schools.com/](http://www.w3schools.com/)
+	1. [https://developer.mozilla.org/en-US/docs/Web](https://developer.mozilla.org/en-US/docs/Web)
+	1. [http://www.51zxw.net/list.aspx?cid=393](http://www.51zxw.net/list.aspx?cid=393)
 1. HTML
 	1. doctype
 	1. xml: tag match, case insensitive
