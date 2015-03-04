@@ -9,6 +9,11 @@
     1. closure
         1. [http://www.w3schools.com/js/js_function_closures.asp](http://www.w3schools.com/js/js_function_closures.asp)
         1. [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+                function sum(x) {
+                    return function(y) {
+                        return x + y;
+                    }
+                }
     1. prototype
 1. Basics
     1. ajax
