@@ -14,8 +14,13 @@
 	1. use UA (User Agent) to detect browser type and layout engine
 	[http://www.whatismybrowser.com/](http://www.whatismybrowser.com/)
 	1. resources
-	[http://en.wikipedia.org/wiki/Web_browser_engine](http://en.wikipedia.org/wiki/Web_browser_engine) 	[http://baike.baidu.com/view/1369399.htm](http://baike.baidu.com/view/1369399.htm)
+		- [http://en.wikipedia.org/wiki/Web_browser_engine](http://en.wikipedia.org/wiki/Web_browser_engine)
+		- [http://baike.baidu.com/view/1369399.htm](http://baike.baidu.com/view/1369399.htm)
 	1. mobile: webkit only
+1. Resources
+	1. [http://www.w3schools.com/](http://www.w3schools.com/)
+	1. [https://developer.mozilla.org/en-US/docs/Web](https://developer.mozilla.org/en-US/docs/Web)
+	1. [http://www.51zxw.net/list.aspx?cid=393](http://www.51zxw.net/list.aspx?cid=393)
 1. HTML
 	1. doctype
 	1. xml: tag match, case insensitive
@@ -28,21 +33,24 @@
 		1. local storage
 		1. canvas
 	1. server-side rendering vs client-side rendering
-1. CSS 	[https://adactio.com/journal](https://adactio.com/journal)
+1. CSS
+	- [https://adactio.com/journal](https://adactio.com/journal)
 1. JavaScript
 	1. Object: dynamic, HashMap
 		1. built-in objects. JSON, Math, Date, RegExp, Object, String, Number, Array, Function etc.
 		1. create object
 			1. {}
-			```javascript
-			var person = {};
-			var person = {
-			    name: ‘Tom’,
-			    age: 14,
-			    talk: function() {
-			    }
-			};
-			```
+			
+				```
+				var person = {};
+				
+				var person = {
+					name: ‘Tom’,
+					age: 14,
+					talk: function() {
+					}
+				};
+				```
 			1. new Object();
 			1. Object.create();
 		1. JSON: serialization
