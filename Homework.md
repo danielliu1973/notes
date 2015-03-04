@@ -52,3 +52,9 @@
 			});
 			return (Math.min(max1, max2));
 		}
+
+1. Highlights in resume
+1. Explain what is MVC
+1. Do the quiz. [http://www.w3schools.com/quiztest/quiztest.asp?qtest=JavaScript](http://www.w3schools.com/quiztest/quiztest.asp?qtest=JavaScript)
+1. watch video [https://www.youtube.com/watch?v=W9goxQO6CrY](https://www.youtube.com/watch?v=W9goxQO6CrY)
+1. Try to implement the form using ExtJS
