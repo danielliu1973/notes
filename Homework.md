@@ -39,7 +39,6 @@
 
 1. Tell me what the function below does. Do you see the bug?
 
-		javascript:
 		function foo(arr) {
 			var max1 = -Infinity, max2 = -Infinity;
 			arr.forEach(function(num) {
