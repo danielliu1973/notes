@@ -1,5 +1,6 @@
 1. You have the following JavaScript code. Write the appropriate HTML so all three statements are equivalent (will bring the same value).
 
+		javascript:
 		document.forms["myForm"].elements["myField"].value
 		document.forms[1].elements[1].value
 		document.myForm.myField.value
