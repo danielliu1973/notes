@@ -14,7 +14,8 @@
 	1. use UA (User Agent) to detect browser type and layout engine
 	[http://www.whatismybrowser.com/](http://www.whatismybrowser.com/)
 	1. resources
-	[http://en.wikipedia.org/wiki/Web_browser_engine](http://en.wikipedia.org/wiki/Web_browser_engine) 	[http://baike.baidu.com/view/1369399.htm](http://baike.baidu.com/view/1369399.htm)
+		- [http://en.wikipedia.org/wiki/Web_browser_engine](http://en.wikipedia.org/wiki/Web_browser_engine)
+		- [http://baike.baidu.com/view/1369399.htm](http://baike.baidu.com/view/1369399.htm)
 	1. mobile: webkit only
 1. HTML
 	1. doctype
@@ -28,7 +29,8 @@
 		1. local storage
 		1. canvas
 	1. server-side rendering vs client-side rendering
-1. CSS 	[https://adactio.com/journal](https://adactio.com/journal)
+1. CSS
+	- [https://adactio.com/journal](https://adactio.com/journal)
 1. JavaScript
 	1. Object: dynamic, HashMap
 		1. built-in objects. JSON, Math, Date, RegExp, Object, String, Number, Array, Function etc.
