@@ -35,6 +35,7 @@
 ```
 
 1. Implement the following function. It should return the sum of the two numbers:
+
 	```
     	sum(3)(4); // returns 7
 	```
