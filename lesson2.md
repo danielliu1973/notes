@@ -5,8 +5,7 @@
 	1. no end tag
 	1. input[type=“submit”] vs button
 1. CSS
-
-		[https://adactio.com/journal](https://adactio.com/journal)
+	*. [https://adactio.com/journal](https://adactio.com/journal)
 1. Object
 	- Map/Table, key:value
 1. Array
