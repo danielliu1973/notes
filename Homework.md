@@ -32,6 +32,7 @@
 1. Tell me what the function below does. Do you see the bug?
 
 	```
-	function foo(arr) {		var max1 = -Infinity, max2 = -Infinity;		arr.forEach(function(num) {			if (num > Math.min(max1, max2)) {				if (max1 < max2) {					max1 = num;				} else {					max2 = num;				}			}		});
+	function foo(arr) {		var max1 = -Infinity, max2 = -Infinity;		arr.forEach(function(num) {			if (num > Math.min(max1, max2)) {				if (max1 < max2) {					max1 = num;
+									} else {					max2 = num;				}			}		});
 			return (Math.min(max1, max2));	}
 	```
