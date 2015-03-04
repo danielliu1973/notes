@@ -17,7 +17,18 @@
 	[http://ryanmorr.com/understanding-scope-and-context-in-javascript/](http://ryanmorr.com/understanding-scope-and-context-in-javascript/)
 
 	```
-	var myObject = {		foo: "bar",		func: function() {			var self = this;			console.log("outer func:  this.foo = " + this.foo);			console.log("outer func:  self.foo = " + self.foo);			(function() {				console.log("inner func:  this.foo = " + this.foo);				console.log("inner func:  self.foo = " + self.foo);			})();		}	};
+	var myObject = {
+		foo: "bar",
+		func: function() {
+			var self = this;
+			console.log("outer func:  this.foo = " + this.foo);
+			console.log("outer func:  self.foo = " + self.foo);
+			(function() {
+				console.log("inner func:  this.foo = " + this.foo);
+				console.log("inner func:  self.foo = " + self.foo);
+			})();
+		}
+	};
 	myObject.func();
 	var test = myObject.func;
 	test();
@@ -25,12 +36,22 @@
 
 1. Implement the following function. It should return the sum of the two numbers.
 
-	:::javascript
 	sum(3)(4); // returns 7
 	
 1. Tell me what the function below does. Do you see the bug?
 
 ```javascript:
-	function foo(arr) {		var max1 = -Infinity, max2 = -Infinity;		arr.forEach(function(num) {			if (num > Math.min(max1, max2)) {				if (max1 < max2) {					max1 = num;				} else {					max2 = num;				}			}		});
-		return (Math.min(max1, max2));	}
+	function foo(arr) {
+		var max1 = -Infinity, max2 = -Infinity;
+		arr.forEach(function(num) {
+			if (num > Math.min(max1, max2)) {
+				if (max1 < max2) {
+					max1 = num;
+				} else {
+					max2 = num;
+				}
+			}
+		});
+		return (Math.min(max1, max2));
+	}
 ```
