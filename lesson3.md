@@ -3,12 +3,6 @@
     1. Git
     1. Brackets
     1. Apache
-    
-    ```shell
-    ddd
-    eee
-    ```
-    
 1. Function
     1. hoisting
     1. scope
