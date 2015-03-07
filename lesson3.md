@@ -1,4 +1,11 @@
 #Go over
+1. Environment
+    1. Git
+    1. Brackets
+    1. Apache
+    ```
+    ddd
+    ```
 1. Function
     1. hoisting
     1. scope
