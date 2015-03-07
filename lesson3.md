@@ -1,4 +1,5 @@
 #Go over
+
 1. Environment
     1. Git
     1. Brackets
@@ -11,6 +12,7 @@
         1. new
 1. MVC
 #New
+
 1. Function
     1. closure
         1. [http://www.w3schools.com/js/js_function_closures.asp](http://www.w3schools.com/js/js_function_closures.asp)
