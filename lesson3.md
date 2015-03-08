@@ -65,6 +65,7 @@
 
                 Ext.Ajax.request({
                     url: 'ajax_demo/sample.json',
+                    method: 'get',
                     params: {
                         key: value
                     },
