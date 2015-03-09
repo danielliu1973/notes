@@ -1,4 +1,8 @@
 #Go over
+1. Environment
+    1. Git
+    1. Brackets
+    1. Apache
 1. Function
     1. hoisting
     1. scope
@@ -61,6 +65,7 @@
 
                 Ext.Ajax.request({
                     url: 'ajax_demo/sample.json',
+                    method: 'get',
                     params: {
                         key: value
                     },
@@ -92,14 +97,19 @@
     1. History
     1. Development mode & production mode
     1. Sencha Command
-    1. UI
+    1. UI components
         1. Element & Container
-        1. Form
+        1. Form fields
+        1. Containers: container, panel, window, form, tab, fieldset, fieldcontainer
+        1. Grid/Tree
         1. Layouts
-    1. Grid/Tree
     1. Data Package
     1. Events
     1. Component Query
+        1. CSS selector
+            1. [http://www.w3schools.com/cssref/css_selectors.asp](http://www.w3schools.com/cssref/css_selectors.asp)
+            1. [https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors)
+            1. [http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
         1. performance
     1. SenchaMVC
     1. resources
