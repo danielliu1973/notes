@@ -40,17 +40,17 @@
 1. Tell me what the function below does. Do you see the bug?
 
 		function foo(arr) {
-			var max1 = -Infinity, max2 = -Infinity;
+			var a1 = -Infinity, a2 = -Infinity;
 			arr.forEach(function(num) {
-				if (num > Math.min(max1, max2)) {
-					if (max1 < max2) {
-						max1 = num;
+				if (num > Math.min(a1, a2)) {
+					if (a1 < a2) {
+						a1 = num;
 					} else {
-						max2 = num;
+						a2 = num;
 					}
 				}
 			});
-			return (Math.min(max1, max2));
+			return (Math.min(a1, a2));
 		}
 
 1. Highlights in resume
