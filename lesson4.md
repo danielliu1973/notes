@@ -37,7 +37,10 @@
             1. msgTarget
             1. readOnlyCls, disabledCls, emptyCls, emptyText, dirtyCls, blankText, invalidText, invalidCls
     1. Containers: container, panel, window, form, tab, fieldset, fieldcontainer
-        1. 
+        1. bubbleEvents
+        1. defaults, defaultType
+        1. items
+        1. layout
     1. Grid/Tree/ComboBox/Time/View
 1. Data Package
     1. Events
