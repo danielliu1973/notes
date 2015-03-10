@@ -5,13 +5,11 @@
     1. UI components
         1. Element & Container
         1. Layouts
-
 # New
 1. UIcomponents
     1. Form fields
     1. Containers: container, panel, window, form, tab, fieldset, fieldcontainer
     1. Grid/Tree/ComboBox/View
-
 1. Data Package
     1. Events
     1. Component Query
