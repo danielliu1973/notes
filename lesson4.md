@@ -6,10 +6,39 @@
         1. Element & Container
         1. Layouts
 # New
-1. UIcomponents
+1. UI components
+    1. Ext.Component
+        1. id, itemId
+        1. margin, padding
+        1. width, height, minWidth, minHeight, maxWidth, maxHeight
+        1. autoScroll
+        1. cls, style, baseCls
+        1. border, frame
+        1. hidden, hideMode
+        1. disabled, disabledCls
+        1. autoEl
+        1. tpl
+        1. stateful, stateId
     1. Form fields
+        1. name
+        1. fieldLabel, fieldStyle, fieldCls
+        1. labelWidth, labelAlign, labelCls, labelStyle, labelSeparator
+        1. hideEmptyLabel, hideLabel
+        1. readOnly, readOnlyCls, disabled, disabledCls, emptyCls, emptyText, dirtyCls
+        1. originalValue / isDirty()
+        1. enforceMaxLength
+        1. enableKeyEvents
+        1. submitValue
+        1. formBind
+        1. Validation text & class
+            1. vtype
+            1. validator
+            1. allowBlank
+            1. msgTarget
+            1. readOnlyCls, disabledCls, emptyCls, emptyText, dirtyCls, blankText, invalidText, invalidCls
     1. Containers: container, panel, window, form, tab, fieldset, fieldcontainer
-    1. Grid/Tree/ComboBox/View
+        1. 
+    1. Grid/Tree/ComboBox/Time/View
 1. Data Package
     1. Events
     1. Component Query
