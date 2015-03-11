@@ -67,7 +67,6 @@
             1. isDirty(), isValid()
             1. checkDirty(), checkValidity(), clearInvalid(), markInvalid()
             1. load(), submit(), loadRecord(), getRecord(), setValues()
-    1. Grid/Tree/ComboBox/Time/View
 1. Data Package
     1. Ext.data.Store
         1. fields: name, type
@@ -115,7 +114,18 @@
 			    	}
     			}
 	    	});
-
+1. Grid
+    1. column
+        1. text, dataIndex, renderer
+    1. viewConfig
+        1. trackOver, enableTextSelection, markDirty, stripeRows
+1. ComboBox
+    1. store
+    1. listConfig
+        1. width, height, minWidth, maxWidth, minHeight, maxHeight
+        1. itemSelector, getInnerTpl
+1. View
+1. Tree/Time
 1. Events
 1. Component Query
     1. CSS selector
