@@ -69,6 +69,7 @@
             1. load(), submit(), loadRecord(), getRecord(), setValues()
     1. Grid/Tree/ComboBox/Time/View
 1. Data Package
+
         me.store = new Ext.data.Store({
 			proxy: {
 				type: 'ajax',
@@ -92,6 +93,7 @@
 				}
 			}
 		});
+
     1. Ext.data.Store
         1. fields: name, type
         1. model
