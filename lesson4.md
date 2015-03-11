@@ -3,7 +3,7 @@
 1. ExtJS
     1. Sencha Command
     1. UI components
-        1. Element & Container
+        1. Component & Container
         1. Layouts
 # New
 
