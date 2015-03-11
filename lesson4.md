@@ -83,8 +83,9 @@
         1. validate(), isValid(), dirty
     1. Ext.data.proxy.Proxy
         1. url
-        1. timeout: global setting
         1. api
+        1. timeout: global setting
+        1. extraParams
         1. limitParam, pageParam etc.
         1. reader
     1. Ext.data.reader.Json
