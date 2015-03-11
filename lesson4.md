@@ -76,6 +76,6 @@
             1. [https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors)
             1. [http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
         1. performance
-    1. SenchaMVC
-    1. resources
-        1. [http://www.sencha.com/blog/top-10-ext-js-development-practices-to-avoid/](http://www.sencha.com/blog/top-10-ext-js-development-practices-to-avoid/)
+1. SenchaMVC
+1. resources
+    1. [http://www.sencha.com/blog/top-10-ext-js-development-practices-to-avoid/](http://www.sencha.com/blog/top-10-ext-js-development-practices-to-avoid/)
