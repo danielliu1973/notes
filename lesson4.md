@@ -70,34 +70,33 @@
     1. Grid/Tree/ComboBox/Time/View
 1. Data Package
 
-        me.store = new Ext.data.Store({
-			proxy: {
-				type: 'ajax',
-				url: 'path/getUserAccountBalances',
-				extraParams: {
-					userId: me.getUserId()
-				},
-				reader: {
-					type: 'json',
-					root: 'items'
-				}
-			},
-			fields: [
-				{name: 'CURRENCY'},
-				{name: 'CURRENCYBALANCE', type : 'float'},
-				{name: 'DEFAULT', type: 'boolean'}
-			],
-			listeners: {
-				load: function(s, records, success) {
+            me.store = new Ext.data.Store({
+	    		proxy: {
+		    		type: 'ajax',
+			    	url: 'path/getUserAccountBalances',
+				    extraParams: {
+					    userId: me.getUserId()
+    				},
+	    			reader: {
+		    			type: 'json',
+			    		root: 'items'
+				    }
+    			},
+	    		fields: [
+		    		{name: 'CURRENCY'},
+			    	{name: 'CURRENCYBALANCE', type : 'float'},
+				    {name: 'DEFAULT', type: 'boolean'}
+    			],
+	    		listeners: {
+		    		load: function(s, records, success) {
 					
-				}
-			}
-		});
+			    	}
+    			}
+	    	});
 
     1. Ext.data.Store
         1. fields: name, type
         1. model
-        1. validations
         1. each(), getAt()
         1. getCount(), getTotalCount()
     1. Ext.data.Model
@@ -105,6 +104,7 @@
         1. get()
         1. isModified()
         1. commit(), reject()
+        1. validations
         1. validate(), isValid()
     1. Ext.data.proxy.Proxy
         1. url
