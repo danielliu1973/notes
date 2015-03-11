@@ -7,7 +7,7 @@
         1. Layouts
 # New
 1. UI components
-    1. Ext.Component4
+    1. Ext.Component
         1. config
             1. id, itemId
             1. margin, padding
@@ -69,13 +69,14 @@
             1. load(), submit(), loadRecord(), getRecord(), setValues()
     1. Grid/Tree/ComboBox/Time/View
 1. Data Package
-    1. Events
-    1. Component Query
-        1. CSS selector
-            1. [http://www.w3schools.com/cssref/css_selectors.asp](http://www.w3schools.com/cssref/css_selectors.asp)
-            1. [https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors)
-            1. [http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
-        1. performance
+    1. Ext.data.Store
+1. Events
+1. Component Query
+    1. CSS selector
+        1. [http://www.w3schools.com/cssref/css_selectors.asp](http://www.w3schools.com/cssref/css_selectors.asp)
+        1. [https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors)
+        1. [http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+    1. performance
 1. SenchaMVC
 1. resources
     1. [http://www.sencha.com/blog/top-10-ext-js-development-practices-to-avoid/](http://www.sencha.com/blog/top-10-ext-js-development-practices-to-avoid/)
