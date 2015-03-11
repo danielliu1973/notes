@@ -69,7 +69,28 @@
             1. load(), submit(), loadRecord(), getRecord(), setValues()
     1. Grid/Tree/ComboBox/Time/View
 1. Data Package
+    1. Ext.data.Store
+        1. fields: name, type
+        1. model
+        1. each(), getAt()
+        1. getCount(), getTotalCount()
+    1. Ext.data.Model
+        1. fields, idProperty
+        1. get()
+        1. isModified()
+        1. commit(), reject()
+        1. validations
+        1. validate(), isValid(), dirty
+    1. Ext.data.proxy.Proxy
+        1. url
+        1. timeout: global setting
+        1. api
+        1. limitParam, pageParam etc.
+        1. reader
+    1. Ext.data.reader.Json
+        1. successProperty, totalProperty, root
     1. Sample
+
             me.store = new Ext.data.Store({
 	    		proxy: {
 		    		type: 'ajax',
@@ -94,24 +115,6 @@
     			}
 	    	});
 
-    1. Ext.data.Store
-        1. fields: name, type
-        1. model
-        1. each(), getAt()
-        1. getCount(), getTotalCount()
-    1. Ext.data.Model
-        1. fields
-        1. get()
-        1. isModified()
-        1. commit(), reject()
-        1. validations
-        1. validate(), isValid()
-    1. Ext.data.proxy.Proxy
-        1. url
-        1. timeout: global setting
-        1. api
-        1. limitParam, pageParam etc.
-        1. reader
 1. Events
 1. Component Query
     1. CSS selector
