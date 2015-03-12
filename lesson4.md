@@ -22,6 +22,8 @@
         1. stateful, stateId
     1. method
         1. disable(), enable()
+    1. custom component
+        1. [http://docs.sencha.com/extjs/4.2.1/#!/guide/components-section-creating-custom-components](http://docs.sencha.com/extjs/4.2.1/#!/guide/components-section-creating-custom-components)
 1. Form fields
     1. config
         1. name
@@ -128,12 +130,27 @@
 1. View
 1. Tree/Time
 1. Events
+    1. listeners : { }
+    1. addListener(), on()
+    1. addManagedListener(), mon()
+    1. removeListener(), removeManagedListener(), un(), mun()
+    1. fireEvent(), fireEventArgs()
 1. Component Query
     1. CSS selector
         1. [http://www.w3schools.com/cssref/css_selectors.asp](http://www.w3schools.com/cssref/css_selectors.asp)
         1. [https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors)
         1. [http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+    1. method
+        1. container: down(), child(), query()
+        1. Component: up(), nextSibling(), nextNode(), previousSibling(), previousNode()
+    1. syntax
+        1. itemId: #
+        1. xtype: xtype
+        1. property: xtype[property=""]
+        1. [http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.ComponentQuery](http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.ComponentQuery)
     1. performance
+        1. do not use it in a loop
+        1. cache the result
 1. SenchaMVC
 1. resources
     1. [http://www.sencha.com/blog/top-10-ext-js-development-practices-to-avoid/](http://www.sencha.com/blog/top-10-ext-js-development-practices-to-avoid/)
