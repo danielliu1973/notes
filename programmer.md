@@ -2,7 +2,7 @@
 
 1. Have a gmail account.
 
-        Most of the candidates use gmail. A few people use yahoo. Hotmail is rarely used.
+     Most of the candidates use gmail. A few people use yahoo. Hotmail is rarely used.
 
 1. Know short-cuts. I use the following short-cuts everyday.
     1. Ctrl+N, Ctrl+O, Ctrl+W
