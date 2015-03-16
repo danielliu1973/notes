@@ -1,7 +1,9 @@
 # How to look like a professional programmer
 
 1. Have a gmail account.
-   Most of the candidates use gmails. A few people use yahoo. Hotmail is rarely used.
+
+      Most of the candidates use gmail. A few people use yahoo. Hotmail is rarely used.
+
 1. Know short-cuts. I use the following short-cuts everyday.
     1. Ctrl+N, Ctrl+O, Ctrl+W
     1. Ctrl+S, Ctrl+C, Ctrl+X, Ctrl+V, Ctrl+Z, Ctrl+Y
@@ -13,4 +15,4 @@
     1. F5, Ctrl+R, Ctrl++, Ctrl+-, Ctrl+0, Ctrl+T, Ctrl+Shift+I
 1. Know how to goolge tenichal questions. The top results of your google search should be from stackoverflow.com
 1. Visit technical websites such as csdn.net or iteye.com instead of sina.com.cn or wenxuecity.com at leisure.
-1. 
+1. Good coding style
