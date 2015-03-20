@@ -6,6 +6,7 @@
 1. Event
 #New
 1. SenchaMVC
+
 		Ext.application({
 			requires: ['Ext.container.Viewport'],
 			name: 'AM',
