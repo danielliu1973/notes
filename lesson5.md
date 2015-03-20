@@ -9,9 +9,7 @@
 
 		Ext.application({
 			name: 'Homework',
-
 			appFolder: 'app',
-
 			requires: [
 				...
 			],
@@ -20,11 +18,7 @@
 				Ext.create('Ext.container.Viewport', {
 					layout: 'fit',
 					items: [{
-						xtype: 'panel',
-						title: 'Users',
-						items : [
-							...
-						]
+						...
 					}]
 				});
 			}
@@ -41,10 +35,8 @@
 		Ext.onReady(function() {
 			Ext.create('Ext.container.Viewport', {
 				layout: 'fit',
-
 				items: [{
 					...
 				}]
-
 			});
 		});
