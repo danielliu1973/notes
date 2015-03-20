@@ -24,3 +24,41 @@
 				});
 			}
 		});
+
+
+
+		Ext.Loader.setPath('Homework', 'app');
+
+		Ext.require([
+			'Ext.container.Viewport',
+			'Ext.tab.Panel',
+			'Homework.view.FundPanel',
+			'Homework.view.EmployeeAdminPanel',
+		]);
+
+		Ext.onReady(function() {
+			Ext.create('Ext.container.Viewport', {
+				layout: 'fit',
+
+				items: [{
+					xtype: 'tabpanel',
+					activeTab: 2,
+					items: [{
+						xtype: 'fundpanel'
+					}, {
+						xtype: 'employeeadminpanel'
+					}, {
+						xtype: 'panel',
+						title: 'Contact Window',
+						items: [{
+							xtype: 'button',
+							text: 'click',
+							handler: function() {
+								Ext.create('Homework.view.ContactWindow').show();
+							}
+						}]
+					}]
+				}]
+
+			});
+		});
