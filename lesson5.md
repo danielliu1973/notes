@@ -25,7 +25,7 @@
 			}
 		});
 
-
+	vs
 
 		Ext.Loader.setPath('Homework', 'app');
 
