@@ -6,6 +6,7 @@
 1. Event
 #New
 1. SenchaMVC
+1. application
 
 		Ext.application({
 			name: 'Homework',
@@ -40,3 +41,7 @@
 				}]
 			});
 		});
+1. controller
+	1. refs
+	1. models, views, stores
+	1. init(), control()
