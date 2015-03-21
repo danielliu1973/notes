@@ -41,6 +41,7 @@
 				}]
 			});
 		});
+
 1. controller
 	1. refs
 	1. models, views, stores
