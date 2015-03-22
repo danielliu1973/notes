@@ -49,6 +49,7 @@
 
 1. Advanced ExtJS
 	1. Form validation
+	1. Tree
 	1. View
 	1. Custom control
 	1. DOM
