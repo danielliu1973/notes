@@ -46,6 +46,7 @@
 		1. refs
 		1. models, views, stores
 		1. init(), control()
+
 1. Advanced ExtJS
 	1. View
 	1. Custom control
