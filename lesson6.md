@@ -1,17 +1,17 @@
 #Go over
 1. SenchaMVC
-
+1. Debug
         function notifyLoginSuccess(resolve, result) {
           if(angular.isDefined(result.license))
-              $localStorage.licenseCode= result.license;
+            $localStorage.licenseCode= result.license;
           if(angular.isDefined(result.fl))
-              $localStorage.flag = result.fl;
+            $localStorage.flag = result.fl;
           if(angular.isDefined(result.fl2))
-              $localStorage.flag2 = result.fl2;
+            $localStorage.flag2 = result.fl2;
           if(angular.isDefined(result.pr))
-              $localStorage.privilege = result.pr;
+            $localStorage.privilege = result.pr;
           if(angular.isDefined(result.pr2))
-              $localStorage.privilege2 = result.pr2;
+            $localStorage.privilege2 = result.pr2;
           UserService.set(result);
           LicenseService.set(result.license);
 
