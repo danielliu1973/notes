@@ -1,26 +1,27 @@
 #Go over
 1. SenchaMVC
 
-      function notifyLoginSuccess(resolve, result) {
-        if(angular.isDefined(result.license))
-            $localStorage.licenseCode= result.license;
-        if(angular.isDefined(result.fl))
-            $localStorage.flag = result.fl;
-        if(angular.isDefined(result.fl2))
-            $localStorage.flag2 = result.fl2;
-        if(angular.isDefined(result.pr))
-            $localStorage.privilege = result.pr;
-        if(angular.isDefined(result.pr2))
-            $localStorage.privilege2 = result.pr2;
-        UserService.set(result);
-        LicenseService.set(result.license);
+        function notifyLoginSuccess(resolve, result) {
+          if(angular.isDefined(result.license))
+              $localStorage.licenseCode= result.license;
+          if(angular.isDefined(result.fl))
+              $localStorage.flag = result.fl;
+          if(angular.isDefined(result.fl2))
+              $localStorage.flag2 = result.fl2;
+          if(angular.isDefined(result.pr))
+              $localStorage.privilege = result.pr;
+          if(angular.isDefined(result.pr2))
+              $localStorage.privilege2 = result.pr2;
+          UserService.set(result);
+          LicenseService.set(result.license);
 
-        resolve(UserService.get());
-        $rootScope.$broadcast('loggedIn', UserService.get());
-        if(credentials && credentials.password && credentials.password.slice(0, 3) == 'tmp') {
-          open('changePassword')();
+          resolve(UserService.get());
+          $rootScope.$broadcast('loggedIn', UserService.get());
+          if(credentials && credentials.password && credentials.password.slice(0, 3) == 'tmp') {
+            open('changePassword')();
+          }
         }
-      }
+
 #New
 1. ExtJS
     1. Form validation
