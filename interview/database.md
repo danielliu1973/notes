@@ -4,13 +4,13 @@ The two are processed quite differently.
 
 ##IN Clause
 
-Select * from T1 where x in ( select y from T2 )
+		Select * from T1 where x in ( select y from T2 )
 
 is typically processed as:
 
-select *
-from t1, ( select distinct y from t2 ) t2
-where t1.x = t2.y;
+	select *
+	from t1, ( select distinct y from t2 ) t2
+	where t1.x = t2.y;
 
 The sub query is evaluated, distinct, indexed and then
 joined to the original table -- typically.
