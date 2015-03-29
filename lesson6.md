@@ -32,5 +32,6 @@
     1. MVC
     1. module
     1. dependency injection
+    1. callback
     1. deferred/promise pattern
     1. two-way data biding
