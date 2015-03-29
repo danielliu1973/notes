@@ -29,6 +29,7 @@
     1. Form validation
     1. set/get value
 1. AngularJS
+    1. MVC
     1. module
     1. dependency injection
     1. deferred/promise pattern
