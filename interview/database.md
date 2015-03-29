@@ -1,9 +1,8 @@
-IN Vs EXISTS
+#IN Vs EXISTS
 
 The two are processed quite differently.
 
-
-IN Clause
+##IN Clause
 
 Select * from T1 where x in ( select y from T2 )
 
@@ -17,7 +16,7 @@ The sub query is evaluated, distinct, indexed and then
 joined to the original table -- typically.
 
 
-As opposed to "EXIST" clause
+##As opposed to "EXIST" clause
 
 select * from t1 where exists ( select null from t2 where y = x )
 
@@ -36,7 +35,7 @@ It always results in a full scan of T1 whereas the first query can make use of
 an index on T1(x).
 
 
-So, when is exists appropriate and in appropriate?
+##So, when is exists appropriate and in appropriate?
 
 Lets say the result of the subquery
 ( select y from T2 )
