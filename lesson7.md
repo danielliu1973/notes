@@ -29,6 +29,7 @@
 	1. common interview questions
 	1. $http
 	1. $q
+1. $location [https://docs.angularjs.org/guide/$location](https://docs.angularjs.org/guide/$location)
 1. Factory(, Service, Value, Constant, Provider) [https://docs.angularjs.org/guide/providers](https://docs.angularjs.org/guide/providers)
 	1. singleton
 	1. can be anything
