@@ -23,6 +23,7 @@
 	1. expression vs ng-bind
 		1. display friendly
 	1. $scope [https://docs.angularjs.org/guide/scope](https://docs.angularjs.org/guide/scope)
+1. Module [https://docs.angularjs.org/guide/module](https://docs.angularjs.org/guide/module)
 1. Dependency Injection [https://docs.angularjs.org/guide/di](https://docs.angularjs.org/guide/di)
 	1. $injector
 1. deferred promise pattern
