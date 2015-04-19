@@ -42,3 +42,4 @@
 		1. util
 		1. share data between controllers
 1. Directives [https://docs.angularjs.org/guide/directive](https://docs.angularjs.org/guide/directive)
+1. Filters
