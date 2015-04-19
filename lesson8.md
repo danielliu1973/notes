@@ -21,4 +21,7 @@
 		1. class definition wrapper
 		1. share data between controllers
 1. Directives [https://docs.angularjs.org/guide/directive](https://docs.angularjs.org/guide/directive)
+	1. marker for DOM elements
+	1. widget
+	1. add functionality
 1. Filters
