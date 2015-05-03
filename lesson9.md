@@ -69,6 +69,7 @@
 				return left + right;
 			}
 			func = add;
+			
 	1. Function
 		1. Optional parameters
 					
