@@ -61,11 +61,12 @@
 			var arr: Array<string> = ['abc', 'ddd'];
 			enum Day {SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY};
 			var day: Day = Day.MONDAY;
-			var any: any = 3;
-			any = 'foo';
 			var func: (a:number, b:number)=>number;
 			function add(left: number, right: number): number {
 				return left + right;
 			}
 			func = add;
+			var any: any = 3;
+			any = 'foo';
+
 	1. interface
