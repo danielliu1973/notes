@@ -114,7 +114,7 @@
 	
 	1. Class
 		1. Members are public by default
-		1. Private members are only at compilation stage 
+		1. Private members are only at compilation stage
 
 				class Animal {
 					private foo: boolean;
@@ -147,6 +147,13 @@
 				sam.move();
 				tom.move(34);
 				
+		1. Lambda and this
+				
+					return ()=> {
+					//return function() {
+						console.log(this);
+					}
+	
 	1. Module
 		1. namespace, package
 		1. export
