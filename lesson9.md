@@ -36,4 +36,36 @@
 		1. addListener, addManagedListener, on, mon
 		1. fireEvent
 
-1. Typescript
+1. [Typescript](http://www.typescriptlang.org/)
+	1. compile to javascript languages
+		1. CoffeeScript
+		1. GWT
+		1. Dart
+		1. Many others
+	1. Advantages
+		1. Backed by Microsoft
+		1. Developed by [Anders Hejlsberg](http://en.wikipedia.org/wiki/Anders_Hejlsberg)
+		1. Superset of Javascript (use existing librarys)
+		1. ECMAScript 6 standard (forward compatiblity)
+		1. Relation with AngularJS
+		1. Debugging
+1. Install
+	1. Node.js
+	1. npm install -g typescript
+1. Features
+	1. types: number, string, boolean, Array, Enum, Void, function, any
+
+			var num: number = 1;
+			var str: string = 'string';
+			var bool: boolean = false;
+			var arr: Array<string> = ['abc', 'ddd'];
+			enum Day {SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY};
+			var day: Day = Day.MONDAY;
+			var any: any = 3;
+			any = 'foo';
+			var func: (a:number, b:number)=>number;
+			function add(left: number, right: number): number {
+				return left + right;
+			}
+			func = add;
+	1. interface
