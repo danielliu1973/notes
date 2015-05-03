@@ -35,4 +35,5 @@
 		1. enableBubble
 		1. addListener, addManagedListener, on, mon
 		1. fireEvent
+
 1. Typescript
