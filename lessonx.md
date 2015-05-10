@@ -32,6 +32,7 @@
 		1. enableBubble
 		1. addListener, addManagedListener, on, mon
 		1. fireEvent
+
 1. CSS
 	1. Style
 	1. Selector
