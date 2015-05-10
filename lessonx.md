@@ -144,6 +144,7 @@
 			
 			1. svg [https://css-tricks.com/using-svg/](https://css-tricks.com/using-svg/)
 			1. canvas
+	
 	1. CSS3 [https://css-tricks.com/snippets/css/](https://css-tricks.com/snippets/css/)
 		1. google font [https://css-tricks.com/snippets/css/basics-of-google-font-api/](https://css-tricks.com/snippets/css/basics-of-google-font-api/)
 		1. gradients 
