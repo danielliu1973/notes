@@ -105,7 +105,15 @@
 			
 			element.querySelector('div.clsName');
 			element.querySelectorAll('div,span');
-	
+
+			angular.element().css()
+							 .addClass()
+							 .removeClass();
+								
+			Ext.dom.Element.setStyle()
+						   .addCls()
+						   .removeCls();
+			
 	1. box model
 		1. [http://www.w3schools.com/css/css_boxmodel.asp](http://www.w3schools.com/css/css_boxmodel.asp)
 		1. [https://developer.mozilla.org/en-US/docs/Web/CSS/box_model](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model)
@@ -133,11 +141,14 @@
 			
 				[android logo](https://developer.cdn.mozilla.net/media/uploads/demos/M/d/MdAshrafMalik/e03f62ad7a10045e9b8f6b9243d157ff/css3-android-animate_1412954303_demo_package/index.html)
 			
+			1. svg [https://css-tricks.com/using-svg/](https://css-tricks.com/using-svg/)
 			1. canvas
-			1. svg
-	1. CSS3
-		1. opacity
-		1. Gradients
-		1. Transforms
-		1. Transitions
+	1. CSS3 [https://css-tricks.com/snippets/css/](https://css-tricks.com/snippets/css/)
+		1. google font [https://css-tricks.com/snippets/css/basics-of-google-font-api/](https://css-tricks.com/snippets/css/basics-of-google-font-api/)
+		1. gradients 
+			[background](https://css-tricks.com/css3-gradients/)
+			[text](https://css-tricks.com/snippets/css/gradient-text/)
+		1. border-radius
+		1. Animation
 		1. Media queries
+		1. Many others
