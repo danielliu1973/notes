@@ -27,6 +27,7 @@
 			  //$emit('MyEvent');
       		  //$broadcast('MyEvent');
 			}]);
+
 	1. ExtJS event
 		1. Ext.util.Observable
 		1. enableBubble
