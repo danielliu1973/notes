@@ -108,7 +108,7 @@
 	
 	1. box model
 	1. CSS image
-		1. background vs img vs content
+		1. background vs img vs content [http://stackoverflow.com/questions/492809/when-to-use-img-vs-css-background-image](http://stackoverflow.com/questions/492809/when-to-use-img-vs-css-background-image)
 		1. sprites
 		1. replacement (pros & cons)
 			1. unicode code [http://unicode-table.com/en/](http://unicode-table.com/en/)
