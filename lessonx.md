@@ -107,6 +107,8 @@
 			element.querySelectorAll('div,span');
 	
 	1. box model
+		1. [http://www.w3schools.com/css/css_boxmodel.asp](http://www.w3schools.com/css/css_boxmodel.asp)
+		1. [https://developer.mozilla.org/en-US/docs/Web/CSS/box_model](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model)
 	1. CSS image
 		1. background vs img vs content [http://stackoverflow.com/questions/492809/when-to-use-img-vs-css-background-image](http://stackoverflow.com/questions/492809/when-to-use-img-vs-css-background-image)
 		1. sprites
