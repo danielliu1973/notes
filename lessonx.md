@@ -107,8 +107,35 @@
 			element.querySelectorAll('div,span');
 	
 	1. box model
+	1. CSS image
+		1. background vs img vs content
+		1. sprites
+		1. replacement (pros & cons)
+			1. unicode code [http://unicode-table.com/en/](http://unicode-table.com/en/)
+					
+					p::after {
+					   content: '\2930';
+					}
+
+			1. font [http://fortawesome.github.io/Font-Awesome/](http://fortawesome.github.io/Font-Awesome/)
+			1. css3
+
+					.arrow-up {
+						width: 0; 
+						height: 0; 
+						border-left: 5px solid transparent;
+						border-right: 5px solid transparent;
+						
+						border-bottom: 5px solid black;
+					}
+			
+				[android logo](https://developer.cdn.mozilla.net/media/uploads/demos/M/d/MdAshrafMalik/e03f62ad7a10045e9b8f6b9243d157ff/css3-android-animate_1412954303_demo_package/index.html)
+			
+			1. canvas
+			1. svg
 	1. CSS3
-		1. CSS image sprites
+		1. opacity
 		1. Gradients
 		1. Transforms
-https://css-tricks.com/snippets/css/css-triangle/
+		1. Transitions
+		1. Media queries
