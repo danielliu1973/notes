@@ -81,6 +81,7 @@
                 }
         
         1. strict mode: "use strict"
+
     1. Advanced
         1. Object: dynamic, HashMap
             1. built-in objects. JSON, Math, Date, RegExp, Object, String, Number, Array, Function etc.
