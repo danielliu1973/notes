@@ -193,8 +193,6 @@
                     1. obj.foo = func;
             1. arguments
                 1. callee/caller
-            1. closure
-            1. prototype
 
 1. homework
     1. server-side rendering vs client-side rendering
