@@ -101,43 +101,43 @@
             1. delete
                 1. delete property vs set undefined
                 
-                            var obj = {
-                                foo: 'a',
-                                bar: 'b'
-                            };
-                            obj.foo = undefined;
-                            console.log(obj.foo);
-                            
-                            delete obj.bar;
-                            console.log(obj.bar);
+                        var obj = {
+                            foo: 'a',
+                            bar: 'b'
+                        };
+                        obj.foo = undefined;
+                        console.log(obj.foo);
+                        
+                        delete obj.bar;
+                        console.log(obj.bar);
                             
                 1. configurable property
 
-                            var foo = 'test';
-                            delete window.foo;
-                            window.bar = 'test';
-                            delete window.bar;
+                        var foo = 'test';
+                        delete window.foo;
+                        window.bar = 'test';
+                        delete window.bar;
 
             1. enumeration
                 1. in
                 1. for in
                 
-                            for (var key in object) {
-                                console.log(key, object[key]);
-                            }
+                        for (var key in object) {
+                            console.log(key, object[key]);
+                        }
 
                 1. Object.keys
             1. Misc
                 1. namespace: avoid global variables
                 1. doc only [example](http://docs.sencha.com/extjs/4.2.2/source/Label2.html#Ext-form-Label)
                 
-                            var foo = {
-                                id: 0,
+                        var foo = {
+                            id: 0,
 
-                                /**
-                                 * name
-                                 */
-                            };
+                            /**
+                             * name
+                             */
+                        };
 
         1. Array
             1. special object, automatically maintain length property
@@ -175,15 +175,15 @@
             1. constructor class
             1. **define functions**
             
-                        function foo() {
-                            // ...
-                        }
-                        var foo = function() {
-                            // ...
-                        };
-                        (function() {
-                            // ...
-                        })();
+                    function foo() {
+                        // ...
+                    }
+                    var foo = function() {
+                        // ...
+                    };
+                    (function() {
+                        // ...
+                    })();
                         
             1. hoisting
             1. scope
