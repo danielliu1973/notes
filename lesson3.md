@@ -1,41 +1,21 @@
-#Go over
-1. Environment
-    1. Git
-    1. Brackets
-    1. Apache
-1. Function
-    1. hoisting
-    1. scope
-    1. context
-        1. this
-        1. new
-1. MVC
-#New
-1. Function
-    1. closure
-        1. [http://www.w3schools.com/js/js_function_closures.asp](http://www.w3schools.com/js/js_function_closures.asp)
-        1. [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+1. prototype
+    1. [http://www.w3schools.com/js/js_object_prototypes.asp](http://www.w3schools.com/js/js_object_prototypes.asp)
+    1. [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
+    1. [http://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/](http://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/)
+    1. [http://www.crockford.com/javascript/inheritance.html](http://www.crockford.com/javascript/inheritance.html)
+    1. [http://javascript.crockford.com/prototypal.html](http://javascript.crockford.com/prototypal.html)
+    1. [http://openwares.net/js/javascript_prototype_chain.html](http://openwares.net/js/javascript_prototype_chain.html)
+    1. prototype vs \__proto__
 
-                function sum(x) {
-                    return function(y) {
-                        return x + y;
-                    }
-                }
-
-    1. prototype
-        1. [http://www.w3schools.com/js/js_object_prototypes.asp](http://www.w3schools.com/js/js_object_prototypes.asp)
-        1. [http://openwares.net/js/javascript_prototype_chain.html](http://openwares.net/js/javascript_prototype_chain.html)
-        1. [http://javascript.crockford.com/prototypal.html](http://javascript.crockford.com/prototypal.html)
-
-                function Person(first, last, age, eyecolor) {
-                    this.firstName = first;
-                    this.lastName = last;
-                    this.age = age;
-                    this.eyeColor = eyecolor;
-                }
-                Person.prototype.getFullName = function() {
-                    return this.firstName + " " + this.lastName;
-                };
+            function Person(first, last, age, eyecolor) {
+                this.firstName = first;
+                this.lastName = last;
+                this.age = age;
+                this.eyeColor = eyecolor;
+            }
+            Person.prototype.getFullName = function() {
+                return this.firstName + " " + this.lastName;
+            };
 
 1. Basics
     1. ajax

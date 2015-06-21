@@ -30,7 +30,8 @@
 	1. doctype
 	1. meta: viewport
 	1. html5 tags [http://www.w3schools.com/html/html5_intro.asp](http://www.w3schools.com/html/html5_intro.asp)
-		1. form input type http://www.w3schools.com/html/html_form_input_types.asp
+		1. end tag, input, br, hr, img
+        1. form input type http://www.w3schools.com/html/html_form_input_types.asp
 		1. semantic tags: header, footer
 		1. local storage
 		1. canvas
@@ -48,7 +49,7 @@
     1. Basic Syntax
         1. var x = 1;
         1. data types : String, Number, Boolean, Array, Object
-        1. value comparison, == vs ===, != vs !==
+        1. value comparison, **== vs ===**, != vs !==
         
             [Equality_comparisons_and_sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
         
@@ -93,6 +94,21 @@
                 1. {}
                 1. new Object();
                 1. Object.create();
+                            
+                            function object(o) {
+                                function F() {}
+                                F.prototype = o;
+                                return new F();
+                            }
+                            
+                            
+                            var __extends = this.__extends || function (d, b) {
+                                for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+                                function __() { this.constructor = d; }
+                                __.prototype = b.prototype;
+                                d.prototype = new __();
+                            };
+                            
             1. JSON: serialization
             1. retrieval & set
                 1. **property name: $, _, a-z, A-Z, 0-9**
@@ -146,6 +162,12 @@
                 1. while(length--) { }
                 1. for (i in array) { }
                 1. **forEach**
+                
+                        var arr = [1, 2, 3];
+                        arr.forEach(function(num, i, a) {
+                            console.log(num);
+                        });
+
             1. methods
                 1. isArray: static
                 1. push
@@ -161,13 +183,13 @@
                 1. dom methods, function arguments
                 1. convert to real array
 
-                            Array.prototype.slice.apply(arguments);
+                        Array.prototype.slice.apply(arguments);
 
         1. String
             1. readonly array-like objects
             1. array methods on string
             
-                            Array.prototype.method.apply(string);
+                        Array.prototype.method.apply(string);
             
             1. new String() vs ""
             1. methods
@@ -185,8 +207,8 @@
                         // ...
                     })();
                         
-            1. hoisting
-            1. scope
+            1. **hoisting**
+            1. **scope**
                 1. what’s this?
                 1. change scope
                     1. function.call/apply(obj, arg)
