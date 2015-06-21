@@ -95,19 +95,19 @@
                 1. new Object();
                 1. Object.create();
                             
-                            function object(o) {
-                                function F() {}
-                                F.prototype = o;
-                                return new F();
-                            }
-                            
-                            
-                            var __extends = this.__extends || function (d, b) {
-                                for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-                                function __() { this.constructor = d; }
-                                __.prototype = b.prototype;
-                                d.prototype = new __();
-                            };
+                        function object(o) {
+                            function F() {}
+                            F.prototype = o;
+                            return new F();
+                        }
+                        
+                        
+                        var __extends = this.__extends || function (d, b) {
+                            for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+                            function __() { this.constructor = d; }
+                            __.prototype = b.prototype;
+                            d.prototype = new __();
+                        };
                             
             1. JSON: serialization
             1. retrieval & set
@@ -189,7 +189,7 @@
             1. readonly array-like objects
             1. array methods on string
             
-                        Array.prototype.method.apply(string);
+                    Array.prototype.method.apply(string);
             
             1. new String() vs ""
             1. methods
