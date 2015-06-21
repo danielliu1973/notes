@@ -8,13 +8,14 @@
 
 1. closure
             
-            Closures are functions that refer to independent (free) variables. 
+        Closures are functions that refer to independent (free) variables.
+
     1. Resources 
         1. [http://www.w3schools.com/js/js_function_closures.asp](http://www.w3schools.com/js/js_function_closures.asp)
         1. [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
         1. [http://javascriptissexy.com/understand-javascript-closures-with-ease/](http://javascriptissexy.com/understand-javascript-closures-with-ease/)
     1. Conclusion
-        1. return a function from a function
+        1. function returns a function
         1. the function uses a local variable between the two functions
         
                 function makeAdder(x) {
@@ -25,6 +26,37 @@
 
                 var add5 = makeAdder(5);
                 var add10 = makeAdder(10);
+
+                function foo(bar) {
+                    // ...
+                }
+                function foo() {
+                    var bar = arguments[0];
+                    // ...
+                }
+
+    1. closure in a loop
+
+            function showHelp(help) {
+                document.getElementById('help').innerHTML = help;
+            }
+
+            function setupHelp() {
+                var helpText = [
+                    {'id': 'email', 'help': 'Your e-mail address'},
+                    {'id': 'name', 'help': 'Your full name'},
+                    {'id': 'age', 'help': 'Your age (you must be over 16)'}
+                ];
+
+                for (var i = 0; i < helpText.length; i++) {
+                    var item = helpText[i];
+                    document.getElementById(item.id).onfocus = function() {
+                        showHelp(item.help);
+                    }
+                }
+            }
+
+            setupHelp();
 
 1. ExtJS
     1. Real examples
