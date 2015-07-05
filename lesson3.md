@@ -37,7 +37,7 @@
                 return this.id;
             };
     
-    1. prototype chain (\__proto__ chain)
+    1. prototype chain (\__proto__ chain)  
             var p = new Person();
             p.getName = function() {/*...*/};
             p.getName();
