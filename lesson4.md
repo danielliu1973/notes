@@ -1,12 +1,3 @@
-# Go over
-1. Closure
-1. ExtJS
-    1. Sencha Command
-    1. UI components
-        1. Component & Container
-        1. Layouts
-# New
-
 1. Ext.Component
     1. config
         1. id, itemId
