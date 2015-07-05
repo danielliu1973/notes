@@ -71,7 +71,11 @@
 		1. Tabs, Trees
 		1. Drag & Drop
 	1. Class system
-    1. Layout system
-    1. Events
-    1. Store, Model, Proxy, View
     1. [http://www.extjs-tutorial.com/extjs/naming-convention](http://www.extjs-tutorial.com/extjs/naming-convention)
+    1. Layout system, component, containers
+    1. Store, Model, Proxy, View
+    1. Events
+    1. rules
+        1. no id
+        1. no global functions
+        1. no functions in strings
