@@ -37,15 +37,16 @@
                 return this.id;
             };
     
-    1. prototype chain (\__proto__ chain)  
+    1. prototype chain (\_\_proto\_\_ chain)
+
             var p = new Person();
             p.getName = function() {/*...*/};
             p.getName();
 
-    1. instanceof
-            Object.getPrototypeOf(obj) -> obj.__proto__  
-            obj instanceof Clazz -> obj.\__proto\__ === Clazz.prototype || obj.\__proto__.__proto__ === Clazz.prototype
-                
+    1. instanceof  
+        Object.getPrototypeOf(obj) -> obj.\_\_proto\_\_  
+        obj instanceof Clazz -> obj.\_\_proto\_\_ === Clazz.prototype || obj.\_\_proto\_\_.\_\_proto\_\_ === Clazz.prototype
+
             var o = {};
             console.log(o instanceof Person);
             console.log(o instanceof Student);
