@@ -12,6 +12,7 @@
             Person.call(person, 'Aaron');
             person.__proto__ = Person.prototype;
             var p2 = new Person('Ding');
+
     1. inheritance
 
             var __extends = function (child, parent) {
@@ -40,6 +41,7 @@
             var p = new Person();
             p.getName = function() {/*...*/};
             p.getName();
+
     1. instanceof
             Object.getPrototypeOf(obj) -> obj.__proto__  
             obj instanceof Clazz -> obj.\__proto\__ === Clazz.prototype || obj.\__proto__.__proto__ === Clazz.prototype
