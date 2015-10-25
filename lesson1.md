@@ -1,8 +1,10 @@
 1. Javascript development introduction
 	1. HTML**5** & CSS**3**
-	1. JS & syntax sugar(babel & typescript)
+	1. JS & syntax sugar/transpiler(babel & typescript)
 	1. **server-side rendering vs client-side rendering**
-1. Books & resources
+1. Free books & resources
+	1. 网易云课堂
+	1. [google+](https://plus.google.com/117089929016683748544/posts)
 	1. [http://it-ebooks.info](http://it-ebooks.info)
 	1. [http://www.w3schools.com/](http://www.w3schools.com/)
 	1. [https://developer.mozilla.org/en-US/docs/Web](https://developer.mozilla.org/en-US/docs/Web)
@@ -31,7 +33,6 @@
 	1. meta:  [viewport](https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag)
 
 					<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	1. html5 tags [http://www.w3schools.com/html/html5_intro.asp](http://www.w3schools.com/html/html5_intro.asp)
 		1. end tag, input, br, hr, img
         1. form input type http://www.w3schools.com/html/html_form_input_types.asp
@@ -48,6 +49,11 @@
 	1. position property
 	1. **box model**
 	1. css3
+1. difference
+	1. variable scope/hoisting
+	2. global variables
+	3. minify/uglify
+	4. non block
 1. JavaScript
     1. Basic Syntax
         1. var x = 1;
