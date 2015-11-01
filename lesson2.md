@@ -65,46 +65,46 @@
     1. function
 1. [IIFE - immediately-invoked function expression](http://benalman.com/news/2010/11/immediately-invoked-function-expression/#iife)
     
-      ```html
-      <html>
-        <head>
-          <scipt>
-            function winloaded() {
-              alert('loaded');
-            }
-            window.onload = winloaded;
-          </script>
-        </head>
-        <body>
-        </body>
-      </html>
-      ```
+    ```html
+    <html>
+      <head>
+        <scipt>
+          function winloaded() {
+            alert('loaded');
+          }
+          window.onload = winloaded;
+        </script>
+      </head>
+      <body>
+      </body>
+    </html>
+    ```
     
-      ```javascript
-      (function() {
+    ```javascript
+    (function() {
         // ...
-      })();
-      ```
+    })();
+    ```
 
-    1. [modular pattern](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html)
+1. [modular pattern](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html)
     
-      ```typescript
-      module victoria {
-          export function myFunc() {
-              console.log('victoria.myFunc');
-          }
-      }
-      ```
+    ```typescript
+    module victoria {
+        export function myFunc() {
+            console.log('victoria.myFunc');
+        }
+    }
+    ```
     
-      ```javascript
-      var victoria;
-      (function (victoria) {
-          function myFunc() {
-              console.log('victoria.myFunc');
-          }
-          victoria.myFunc = myFunc;
-      })(victoria || (victoria = {}));
-      ```
+    ```javascript
+    var victoria;
+    (function (victoria) {
+        function myFunc() {
+            console.log('victoria.myFunc');
+        }
+        victoria.myFunc = myFunc;
+    })(victoria || (victoria = {}));
+    ```
 
 1. JavaScript
     1. var me = this, ths = this, self = this;
