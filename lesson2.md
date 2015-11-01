@@ -1,3 +1,67 @@
+1. Learn from source code
+1. Playground
+    1. [https://d157rqmxrxj6ey.cloudfront.net/aaronding/10566](https://d157rqmxrxj6ey.cloudfront.net/aaronding/10566)
+1. Only in javascript
+    1. variable scope [This is not an answer](http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript)
+        1. global
+        
+          ```javascript
+          var myglobal = 432;
+          console.log(window.myglobal);
+          for (var key in window) {
+            console.log(key);
+          }
+          console.log(key);
+          ```
+
+        2. function/local
+        
+          ```javascript
+          function foo() {
+            var local1 = 'local1',
+                local2 = 'local2';
+            function bar() {
+              var local1 = 'another local';
+              console.log(local1);
+              console.log(local2);
+            }
+            console.log(local1);
+            bar();
+            console.log(local2);
+          }
+          ```
+        
+        3. let
+        
+          ```
+          /*jshint esnext: true*/
+          function letTest() {
+            'use strict';
+            let x = 31;
+            if (true) {
+              let x = 71;  // different variable
+              console.log(x);  // 71
+            }
+            console.log(x);  // 31
+          }
+
+          letTest();
+          ```
+          
+        test:
+        
+        ```
+        var x = 5;
+
+        function foo() {
+          console.log(x);
+          var x = 10;
+          console.log(x); 
+        }
+        
+        foo();
+        ```
+
 1. JavaScript
     1. var me = this, ths = this, self = this;
     1. !!foo
