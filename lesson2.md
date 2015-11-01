@@ -1,39 +1,39 @@
 1. Learn from source code
-1. Only in javascript
-    1. variable scope [This is not an answer](http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript)
-        1. global
-        
-          ```javascript
-          var myglobal = 432;
-          console.log(window.myglobal);
-          for (var key in window) {
-            console.log(key);
-          }
-          console.log(key);
-          ```
 
-        2. function/local
+1. variable scope [This is not an answer](http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript)
+    1. global
         
-          ```javascript
-          function foo() {
+        ```javascript
+        var myglobal = 432;
+        console.log(window.myglobal);
+        for (var key in window) {
+            console.log(key);
+        }
+        console.log(key);
+        ```
+
+    1. function/local
+        
+        ```javascript
+        function foo() {
             var local1 = 'local1',
                 local2 = 'local2';
             function bar() {
-              var local1 = 'another local';
-              console.log(local1);
-              console.log(local2);
+                var local1 = 'another local';
+                console.log(local1);
+                console.log(local2);
             }
             console.log(local1);
             bar();
             console.log(local2);
-          }
-          ```
+        }
+        ```
         
-        3. let
+    3. let
         
-          ```
-          /*jshint esnext: true*/
-          function letTest() {
+        ```
+        /*jshint esnext: true*/
+        function letTest() {
             'use strict';
             let x = 31;
             if (true) {
@@ -41,10 +41,10 @@
               console.log(x);  // 71
             }
             console.log(x);  // 31
-          }
+        }
 
-          letTest();
-          ```
+        letTest();
+        ```
           
         test:
         
@@ -52,18 +52,18 @@
         var x = 5;
 
         function foo() {
-          console.log(x);
-          var x = 10;
-          console.log(x); 
+            console.log(x);
+            var x = 10;
+            console.log(x); 
         }
         
         foo();
         ```
 
-    1. [hoisting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
-      1. only declaration, not assignment
-      1. function
-    1. [IIFE - immediately-invoked function expression](http://benalman.com/news/2010/11/immediately-invoked-function-expression/#iife)
+1. [hoisting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
+    1. only declaration, not assignment
+    1. function
+1. [IIFE - immediately-invoked function expression](http://benalman.com/news/2010/11/immediately-invoked-function-expression/#iife)
     
       ```html
       <html>
@@ -174,13 +174,16 @@
 
         fix
         
-        ```javasctipt
-        document.getElementById(item.id).onfocus = (function() {
-            var help = item.help;
-            return function() {
-                showHelp(help);
-            };
-        }());
+        ```javascript
+        for (var i = 0; i < helpText.length; i++) {
+            var item = helpText[i];
+            document.getElementById(item.id).onfocus = (function() {
+                var help = item.help;
+                return function() {
+                    showHelp(help);
+                };
+            }());
+        }
         ```
     
 1. ExtJS
