@@ -63,7 +63,22 @@
     1. [hoisting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
       1. only declaration, not assignment
       1. function
-    1. IIFE - immediately-invoked function expression
+    1. [IIFE - immediately-invoked function expression](http://benalman.com/news/2010/11/immediately-invoked-function-expression/#iife)
+    
+      ```html
+      <html>
+        <head>
+          <scipt>
+            function winloaded() {
+              alert('loaded');
+            }
+            window.onload = winloaded;
+          </script>
+        </head>
+        <body>
+        </body>
+      </html>
+      ```
     
       ```javascript
       (function() {
