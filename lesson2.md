@@ -86,6 +86,26 @@
       })();
       ```
 
+    1. [modular pattern](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html)
+    
+    ```typescript
+    module victoria {
+        export function myFunc() {
+            console.log('victoria.myFunc');
+        }
+    }
+    ```
+    
+    ```javascript
+    var victoria;
+    (function (victoria) {
+        function myFunc() {
+            console.log('victoria.myFunc');
+        }
+        victoria.myFunc = myFunc;
+    })(victoria || (victoria = {}));
+    ```
+    
 1. JavaScript
     1. var me = this, ths = this, self = this;
     1. !!foo
