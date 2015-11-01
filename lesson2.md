@@ -31,7 +31,7 @@
         
     3. let
         
-        ```
+        ```javascript
         /*jshint esnext: true*/
         function letTest() {
             'use strict';
@@ -48,7 +48,7 @@
           
         test:
         
-        ```
+        ```javascript
         var x = 5;
 
         function foo() {
