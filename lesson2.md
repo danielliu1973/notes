@@ -88,24 +88,24 @@
 
     1. [modular pattern](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html)
     
-    ```typescript
-    module victoria {
-        export function myFunc() {
-            console.log('victoria.myFunc');
-        }
-    }
-    ```
+      ```typescript
+      module victoria {
+          export function myFunc() {
+              console.log('victoria.myFunc');
+          }
+      }
+      ```
     
-    ```javascript
-    var victoria;
-    (function (victoria) {
-        function myFunc() {
-            console.log('victoria.myFunc');
-        }
-        victoria.myFunc = myFunc;
-    })(victoria || (victoria = {}));
-    ```
-    
+      ```javascript
+      var victoria;
+      (function (victoria) {
+          function myFunc() {
+              console.log('victoria.myFunc');
+          }
+          victoria.myFunc = myFunc;
+      })(victoria || (victoria = {}));
+      ```
+
 1. JavaScript
     1. var me = this, ths = this, self = this;
     1. !!foo
@@ -115,8 +115,10 @@
     1. nested function
 
 1. closure
-            
-        Closures are functions that refer to independent (free) variables.
+    
+    ```        
+    Closures are functions that refer to independent (free) variables.
+    ```
 
     1. Resources 
         1. [http://www.w3schools.com/js/js_function_closures.asp](http://www.w3schools.com/js/js_function_closures.asp)
@@ -126,46 +128,61 @@
         1. function returns a function
         1. the function uses a local variable between the two functions
         
-                function makeAdder(x) {
-                    return function(y) {
-                        return x + y;
-                    };
-                }
+        ```javascript
+        function makeAdder(x) {
+            return function(y) {
+                return x + y;
+            };
+        }
 
-                var add5 = makeAdder(5);
-                var add10 = makeAdder(10);
+        var add5 = makeAdder(5);
+        var add10 = makeAdder(10);
 
-                function foo(bar) {
-                    // ...
-                }
-                function foo() {
-                    var bar = arguments[0];
-                    // ...
-                }
+        function foo(bar) {
+            // ...
+        }
+        function foo() {
+            var bar = arguments[0];
+            // ...
+        }
+        ```
 
     1. closure in a loop
 
-            function showHelp(help) {
-                document.getElementById('help').innerHTML = help;
-            }
+        ```javascript
+        function showHelp(help) {
+            document.getElementById('help').innerHTML = help;
+        }
 
-            function setupHelp() {
-                var helpText = [
-                    {'id': 'email', 'help': 'Your e-mail address'},
-                    {'id': 'name', 'help': 'Your full name'},
-                    {'id': 'age', 'help': 'Your age (you must be over 16)'}
-                ];
+        function setupHelp() {
+            var helpText = [
+                {'id': 'email', 'help': 'Your e-mail address'},
+                {'id': 'name', 'help': 'Your full name'},
+                {'id': 'age', 'help': 'Your age (you must be over 16)'}
+            ];
 
-                for (var i = 0; i < helpText.length; i++) {
-                    var item = helpText[i];
-                    document.getElementById(item.id).onfocus = function() {
-                        showHelp(item.help);
-                    }
+            for (var i = 0; i < helpText.length; i++) {
+                var item = helpText[i];
+                document.getElementById(item.id).onfocus = function() {
+                    showHelp(item.help);
                 }
             }
+        }
 
-            setupHelp();
+        setupHelp();
+        ```
 
+        fix
+        
+        ```javasctipt
+        document.getElementById(item.id).onfocus = (function() {
+            var help = item.help;
+            return function() {
+                showHelp(help);
+            };
+        }());
+        ```
+    
 1. ExtJS
     1. Real examples
         1. [synology](https://www.synology.com/en-us/dsm/5.2/live_demo)
