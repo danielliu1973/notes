@@ -1,6 +1,4 @@
 1. Learn from source code
-1. Playground
-    1. [https://d157rqmxrxj6ey.cloudfront.net/aaronding/10566](https://d157rqmxrxj6ey.cloudfront.net/aaronding/10566)
 1. Only in javascript
     1. variable scope [This is not an answer](http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript)
         1. global
@@ -61,6 +59,17 @@
         
         foo();
         ```
+
+    1. [hoisting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
+      1. only declaration, not assignment
+      1. function
+    1. IIFE - immediately-invoked function expression
+    
+      ```javascript
+      (function() {
+        // ...
+      })();
+      ```
 
 1. JavaScript
     1. var me = this, ths = this, self = this;
