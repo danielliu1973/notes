@@ -3,56 +3,64 @@
         pointer, reference
     1. prototype vs \__proto__
 
-            function Person(name) {
-                this.name = name;
-            }
-            Person.prototype.getName = function() {
-                return this.name;
-            };
-            var person = new Person('Aaron');
-            var person = {};
-            Person.call(person, 'Aaron');
-            person.__proto__ = Person.prototype;
-            var p2 = new Person('Ding');
-
+        ···javascript
+        function Person(name) {
+            this.name = name;
+        }
+        Person.prototype.getName = function() {
+            return this.name;
+        };
+        var person = new Person('Aaron');
+        var person = {};
+        Person.call(person, 'Aaron');
+        person.__proto__ = Person.prototype;
+        var p2 = new Person('Ding');
+        ```
+        
     1. inheritance
 
-            var __extends = function (child, parent) {
-                for (var p in parent) {
-                    if (parent.hasOwnProperty(p)) child[p] = parent[p];
-                }
-                function __() { this.constructor = child; }
-                __.prototype = parent.prototype;
-                child.prototype = new __();
-                //child.prototype = Object.create(parent.prototype);
-                //child.prototype.constructor = child;
-            };
-
-            function Student(name, id) {
-                Person.call(this, name);
-                this.id = id;
+        ```javascript
+        var __extends = function (child, parent) {
+            for (var p in parent) {
+                if (parent.hasOwnProperty(p)) child[p] = parent[p];
             }
+            function __() { this.constructor = child; }
+            __.prototype = parent.prototype;
+            child.prototype = new __();
+            //child.prototype = Object.create(parent.prototype);
+            //child.prototype.constructor = child;
+        };
 
-            __extends(Student, Person);
+        function Student(name, id) {
+            Person.call(this, name);
+            this.id = id;
+        }
 
-            Student.prototype.getId = function() {
-                return this.id;
-            };
+        __extends(Student, Person);
+
+        Student.prototype.getId = function() {
+            return this.id;
+        };
+        ```
     
     1. prototype chain (\_\_proto\_\_ chain)
 
-            var p = new Person();
-            p.getName = function() {/*...*/};
-            p.getName();
+        ```javascript
+        var p = new Person();
+        p.getName = function() {/*...*/};
+        p.getName();
+        ```
 
     1. instanceof  
         Object.getPrototypeOf(obj) -> obj.\_\_proto\_\_  
         obj instanceof Clazz -> obj.\_\_proto\_\_ === Clazz.prototype || obj.\_\_proto\_\_.\_\_proto\_\_ === Clazz.prototype
 
-            var o = {};
-            console.log(o instanceof Person);
-            console.log(o instanceof Student);
-            o.__proto__ = Student.prototype;
+        ```javascript
+        var o = {};
+        console.log(o instanceof Person);
+        console.log(o instanceof Student);
+        o.__proto__ = Student.prototype;
+        ```
 
     1. Resources  
         1. [http://www.w3schools.com/js/js_object_prototypes.asp](http://www.w3schools.com/js/js_object_prototypes.asp)
