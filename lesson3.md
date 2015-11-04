@@ -3,7 +3,7 @@
         pointer, reference
     1. prototype vs \__proto__
 
-        ···javascript
+        ```javascript
         function Person(name) {
             this.name = name;
         }
