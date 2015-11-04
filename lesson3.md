@@ -4,17 +4,21 @@
     1. prototype vs \__proto__
 
         ```javascript
-        function Person(name) {
+        function Person(name, age) {
             this.name = name;
+            this.age = age;
         }
         Person.prototype.getName = function() {
             return this.name;
         };
-        var person = new Person('Aaron');
+        Person.prototype.getAge = function() {
+            return this.age;
+        };
+        var person = new Person('Aaron', 18);
         var person = {};
-        Person.call(person, 'Aaron');
+        Person.call(person, 'Aaron', 18);
         person.__proto__ = Person.prototype;
-        var p2 = new Person('Ding');
+        var p2 = new Person('Ding', 20);
         ```
         
     1. inheritance
@@ -31,8 +35,8 @@
             //child.prototype.constructor = child;
         };
 
-        function Student(name, id) {
-            Person.call(this, name);
+        function Student(name, age, id) {
+            Person.call(this, name, age);
             this.id = id;
         }
 
@@ -46,7 +50,7 @@
     1. prototype chain (\_\_proto\_\_ chain)
 
         ```javascript
-        var p = new Person();
+        var p = new Person('Tom', 15);
         p.getName = function() {/*...*/};
         p.getName();
         ```
