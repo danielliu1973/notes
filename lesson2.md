@@ -202,25 +202,3 @@
             }());
         }
         ```
-    
-1. ExtJS
-    1. Real examples
-        1. [synology](https://www.synology.com/en-us/dsm/5.2/live_demo)
-        1. [sitescout](https://rtb.sitescout.com/)
-    1. History
-    1. Development mode & production mode
-    1. Sencha Command
-	1. Examples:
-		1. Forms, ComboBox, Grids, Windows, Layout Managers, Toolbars and Menus
-		1. DataView
-		1. Tabs, Trees
-		1. Drag & Drop
-	1. Class system
-    1. [http://www.extjs-tutorial.com/extjs/naming-convention](http://www.extjs-tutorial.com/extjs/naming-convention)
-    1. Layout system, component, containers
-    1. Store, Model, Proxy, View
-    1. Events
-    1. rules
-        1. no id
-        1. no global functions
-        1. no functions in strings
