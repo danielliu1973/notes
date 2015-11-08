@@ -76,13 +76,43 @@
         1. [http://ms.csdn.net/share/2F555591FBA7ACD734AA8882189441D6_1_IPHONE_APP](http://ms.csdn.net/share/2F555591FBA7ACD734AA8882189441D6_1_IPHONE_APP)
         1. [Object.create](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
 
-1. ExtJS
-    
+1. ExtJS introduction
+    1. smartclient, kendo ui
+    1. Real examples
+        1. [synology](https://www.synology.com/en-us/dsm/5.2/live_demo)
+        1. [sitescout](https://rtb.sitescout.com/)
+    1. History
+    1. Development mode & production mode
+    1. Sencha Command
+	1. Examples:
+		1. Forms, ComboBox, Grids, Windows, Layout Managers, Toolbars and Menus
+		1. DataView
+		1. Tabs, Trees
+		1. Drag & Drop
+		
+1. ExtJS interview questions
+    1. [http://www.withoutbook.com/Technology.php?tech=65&subject=ExtJS%20Interview%20Questions%20and%20Answers](http://www.withoutbook.com/Technology.php?tech=65&subject=ExtJS%20Interview%20Questions%20and%20Answers)
+    1. [http://atoz-tech.blogspot.ca/2011/07/extjs-interview-questions.html](http://atoz-tech.blogspot.ca/2011/07/extjs-interview-questions.html)
+    1. [http://interviewquestionsanswers.org/forum/topic-1553-65-ext-js-interview-questions-and-answers-page-1.html](http://interviewquestionsanswers.org/forum/topic-1553-65-ext-js-interview-questions-and-answers-page-1.html)
+    1. [http://www.globalguideline.com/interview_questions/Questions.php?sc=Ext_JS](http://www.globalguideline.com/interview_questions/Questions.php?sc=Ext_JS)
+    1. [http://sureshat25.blogspot.ca/2014/12/ext-js-interview-question-and-answers.html](http://sureshat25.blogspot.ca/2014/12/ext-js-interview-question-and-answers.html)
+    1. [http://extjsexamples.blogspot.ca/2013/05/extjs4-interview-questions-answers.html](http://extjsexamples.blogspot.ca/2013/05/extjs4-interview-questions-answers.html)
+
+1. ExtJS development
+	1. Class system
+    1. [http://www.extjs-tutorial.com/extjs/naming-convention](http://www.extjs-tutorial.com/extjs/naming-convention)
     1. UI components
         1. Element & Container
         1. Layouts
-            1. absolute, table
-            1. fit, border, accordion, card
-            1. auto, anchor, form, vbox
-            1. hbox, column
+    1. Layout system
+        1. absolute, table
+        1. fit, border, accordion, card
+        1. auto, anchor, form, vbox
+        1. hbox, column
+    1. Store, Model, Proxy, View
+    1. Events
+1. ExtJS dev rules
+    1. no id
+    1. no global functions
+    1. no functions in strings
     
