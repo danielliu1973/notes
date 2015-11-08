@@ -73,6 +73,7 @@
         1. [http://javascript.crockford.com/prototypal.html](http://javascript.crockford.com/prototypal.html)
         1. [http://openwares.net/js/javascript_prototype_chain.html](http://openwares.net/js/javascript_prototype_chain.html)
         1. [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
+        1. [http://ms.csdn.net/share/2F555591FBA7ACD734AA8882189441D6_1_IPHONE_APP](http://ms.csdn.net/share/2F555591FBA7ACD734AA8882189441D6_1_IPHONE_APP)
         1. [Object.create](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
 
 1. ExtJS
