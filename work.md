@@ -16,6 +16,13 @@
   4. re-organize css or convert css to sass
   5. override/customize library(bootstrap) css
 1. make a plan
+1. must be very proficient with developer tools
+  1. debug
+  1. set breakpoint
+    1. debugger
+    1. xhr, event breakpoints
+  1. inspect elements
+  1. manipulate html/css
 1. begin coding
   1. reuse/copy from existing project
   2. try to use lib/plugin, e.g. ng-translate, atob
