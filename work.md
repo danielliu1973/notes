@@ -15,3 +15,9 @@
   3. refactor html to reusable templates, extract common code
   4. re-organize css or convert css to sass
   5. override/customize library(bootstrap) css
+1. make a plan
+1. begin coding
+  1. reuse/copy from existing project
+  2. try to use lib/plugin, e.g. ng-translate, atob
+  3. write utils
+  4. unit tesing
