@@ -4,7 +4,7 @@
   1. callback != async
 1. setTimeout
 1. promise
-  '''javascript
+  ```javascript
   var promise = new Promise(function(resolve, reject) {
     setTimeout(function() {
       var a = 1;
@@ -26,4 +26,4 @@
   }, function(err) {
     console.log(err);
   });
-  '''
+  ```
