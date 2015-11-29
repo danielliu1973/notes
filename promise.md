@@ -1,11 +1,12 @@
 1. async
+  1. why async
   1. asysn != multithread
-  2. singlethread != sync
+  1. singlethread != sync
 1. event
 1. callback
   1. callback != async
     ```javascript
-    var arr = [];
+    var arr = [0];
     arr.forEach(function() {
       console.log(1);
     });
