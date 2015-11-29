@@ -1,8 +1,28 @@
 1. async
+  1. asysn != multithread
+  2. singlethread != sync
 1. event
 1. callback
   1. callback != async
+    ```javascript
+    var arr = [];
+    arr.forEach(function() {
+      console.log(1);
+    });
+    console.log(2);
+    
+    setTimeout(function() {
+      console.log(1);
+    });
+    console.log(2);
+    ```
+    
 1. setTimeout
+  1. tasks are queued
+  1. tasks won't be executed until sync codes are finished
+  1. the delay time is not guaranteed
+  1. setInterval [http://javascript.info/tutorial/settimeout-setinterval](http://javascript.info/tutorial/settimeout-setinterval)
+  
 1. promise
   ```javascript
   var promise = new Promise(function(resolve, reject) {
