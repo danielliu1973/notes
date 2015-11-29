@@ -1,8 +1,12 @@
-1. async
+1. async [http://sporto.github.io/blog/2012/12/09/callbacks-listeners-promises/](http://sporto.github.io/blog/2012/12/09/callbacks-listeners-promises/)
   1. why async
   1. asysn != multithread
   1. singlethread != sync
+  1. window.open
 1. event
+  1. DOM event
+  2. custom event
+  3. lib event
 1. callback
   1. callback != async
     ```javascript
