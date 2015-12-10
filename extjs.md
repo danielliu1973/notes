@@ -17,6 +17,7 @@
             1. Responsive
             1. More widgets, breadcrumb bar, tagfield, spreadsheet(5.1), color picker(5.1), rating widget(5.1)
             1. Components in grid cells
+            1. No support for IE6 & 7
             1. Mobile(tablet) support
             1. Sencha command
         1. 6.x (2015.04)
