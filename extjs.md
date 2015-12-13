@@ -5,7 +5,7 @@
         1. [sitescout](https://rtb.sitescout.com/)
     1. History
         1. 3.x (2009.07)
-            1 stable & fast
+            1. stable & fast
         1. 4.x (2011.04)
             1. Not compatible with 3.x
             1. Class system & Ext.define
