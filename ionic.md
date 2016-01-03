@@ -20,3 +20,4 @@
 1. Run in simulator. You need to have android studio and/or Xcode install on your computer.
     * ionic emulate ios
     * ionic emulate android
+1. [docs](http://ionicframework.com/docs/)
