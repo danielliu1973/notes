@@ -254,6 +254,7 @@
           text-align: center;
       }
       ```
+      
   1. [filter](https://developer.mozilla.org/en/docs/Web/CSS/filter)
   1. animation
   1. [media query](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
@@ -262,6 +263,7 @@
       ```css
       @media (min-width: 700px) and (orientation: landscape) { ... }
       ```
+      
     1. device width
     1. resolution
       ```css
