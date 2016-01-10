@@ -225,7 +225,7 @@
       1. background image loading
       1. opacity: 0, top: -99999px, clip, set size to 0
       1. focusable
-  1.[flexbox model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
+  1. [flexbox model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
 1. [vertical align](https://css-tricks.com/centering-css-complete-guide/)
 1. pseudo element
   1. ::before/::after
