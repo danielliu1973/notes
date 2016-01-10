@@ -267,13 +267,14 @@
       
     1. device width
     1. resolution
+    
       ```css
       @media print and (min-resolution: 300dpi) { ... }
       /* To replace the old (min-device-pixel-ratio: 2) */
       /* only screen and (min-device-pixel-ratio: 2) */
       @media screen and (min-resolution: 2dppx) { ... }
       ```
-      
+
 1. add/remove css
   1. angularjs, should be done in directive
     ```javascript
