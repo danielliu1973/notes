@@ -31,8 +31,10 @@
 1. HTML
 	1. doctype
 	1. meta:  [viewport](https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag)
-
-					<meta name="viewport" content="width=device-width, initial-scale=1">
+		```html
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		```
+		
 	1. html5 tags [http://www.w3schools.com/html/html5_intro.asp](http://www.w3schools.com/html/html5_intro.asp)
 		1. end tag, input, br, hr, img
         1. form input type http://www.w3schools.com/html/html_form_input_types.asp
