@@ -224,16 +224,3 @@
                     1. obj.foo = func;
             1. arguments
                 1. callee/caller
-
-1. homework
-    1. server-side rendering vs client-side rendering
-    1. MVC
-    1. implement function add(a, b, c...)
-        add(3); // returns 3
-        add(3, 4);  // returns 7
-        add(3, 4, 5);  // returns 12
-    1. impplement function max(a, b, c...)
-        max(3); // returns 3
-        max(3, 4);  // returns 4
-        max(3, 4, 5);  // returns 5
-    1. implement function clone
