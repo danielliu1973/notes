@@ -1,23 +1,11 @@
-1. Javascript development introduction
-	1. HTML**5** & CSS**3**
-	1. JS & syntax sugar/transpiler(babel & typescript)
-	1. **server-side rendering vs client-side rendering**
-1. Free books & resources
-	1. 网易云课堂
-	1. [google+](https://plus.google.com/117089929016683748544/posts)
-	1. [http://it-ebooks.info](http://it-ebooks.info)
-	1. [http://www.w3schools.com/](http://www.w3schools.com/)
-	1. [https://developer.mozilla.org/en-US/docs/Web](https://developer.mozilla.org/en-US/docs/Web)
-	1. [http://www.51zxw.net/list.aspx?cid=393](http://www.51zxw.net/list.aspx?cid=393)
+1. **server-side rendering vs client-side rendering**
 1. IDE
-	1. WebStorm: [https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/)	
+	1. WebStorm: [https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/)
+	1. Visual Studio Code: [http://code.visualstudio.com/](http://code.visualstudio.com/)
 	1. Brackets: [http://brackets.io/](http://brackets.io/)
 1. VCS
 	1. Create an account @ [https://bitbucket.org/](https://bitbucket.org/) and [https://github.com/](https://github.com/)
 	1. download SourceTree @ [http://www.sourcetreeapp.com/](http://www.sourcetreeapp.com/)
-1. Server
-	1. NodeJS[https://nodejs.org/](https://nodejs.org/)
-	1. Apache server [http://www.apachehaus.com/](http://www.apachehaus.com/)
 1. Browsers
 	1. 5 major browsers. IE/Edge, FireFox, Chrome, Safari, Opera
 	1. 3 (or 4) Layout Engines (kernel, rendering engines): Webkit (Blink), Trident/EdgeHTML, Gecko
@@ -42,11 +30,10 @@
 		1. local storage
 		1. canvas
 1. CSS [https://adactio.com/journal](https://adactio.com/journal)
-
-1. difference
-	1. variable scope/hoisting
-	2. global variables
-	3. minify/uglify
-	4. non block
-
-1. Learn from source code
+1. Free books & resources
+	1. 网易云课堂
+	1. [google+](https://plus.google.com/117089929016683748544/posts)
+	1. [http://it-ebooks.info](http://it-ebooks.info)
+	1. [http://www.w3schools.com/](http://www.w3schools.com/)
+	1. [https://developer.mozilla.org/en-US/docs/Web](https://developer.mozilla.org/en-US/docs/Web)
+	1. [http://www.51zxw.net/list.aspx?cid=393](http://www.51zxw.net/list.aspx?cid=393)
