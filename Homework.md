@@ -50,7 +50,6 @@
   test();
   ```
 
-
 1. Implement the following function. It should return the sum of the two numbers:
   ```javascript
   sum(3)(4); // returns 7
@@ -76,6 +75,3 @@
 1. Highlights in resume
 1. Explain what is MVC
 1. Do the quiz. [http://www.w3schools.com/quiztest/quiztest.asp?qtest=JavaScript](http://www.w3schools.com/quiztest/quiztest.asp?qtest=JavaScript)
-1. Implement the screenshot below using ExtJS
-	* [screen1.png](img/screen1.png)
-	* [screen2.png](img/screen2.png)
