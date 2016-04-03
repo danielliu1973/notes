@@ -178,10 +178,10 @@
 
   1. arguments
     ```javascript
-      function(p1, p2, p3) {
+      function foo(p1, p2, p3) {
         var p1 = arguments[0],
           p2 = arguments[1],
-          p3 = arguments[0];
+          p3 = arguments[2];
           
           // ...
       }
