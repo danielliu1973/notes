@@ -25,24 +25,29 @@
 
   1. regex
   1. object
-          var person = {};
-          person.name = 'Tom';
-          person.age = 10;
+    ```javascript
+      var person = {};
+      person.name = 'Tom';
+      person.age = 10;
+    ```
 
   1. array
-          var arr = [1, 2, 3];
-          arr.push(9);
+    ```javascript
+      var arr = [1, 2, 3];
+      arr.push(9);
+    ```
 
   1. loop: for, while
   1. error handling
-          try {
-              // ...
-          } catch (e) {
-              // ...
-          }
+    ```javascript
+      try {
+        // ...
+      } catch (e) {
+        // ...
+      }
+    ```
   
   1. strict mode: "use strict"
-
 
 1. Object: dynamic, HashMap
   1. built-in objects. JSON, Math, Date, RegExp, Object, String, Number, Array, Function etc.
