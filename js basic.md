@@ -126,6 +126,7 @@
     1. while(length--) { }
     1. for (i in array) { }
     1. **forEach**
+      
       ```javascript
         var arr = [1, 2, 3];
         arr.forEach(function(num, i, a) {
