@@ -175,16 +175,14 @@
         // ...
     })();
     ```
-                
+
+  1. arguments
   1. **hoisting**
   1. **scope**
     1. what’s this?
     1. change scope
       1. function.call/apply(obj, arg)
       1. obj.foo = func;
-  1. arguments
-    1. callee/caller
-
 
 1. variable scope [This is not an answer](http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript)
   1. global
