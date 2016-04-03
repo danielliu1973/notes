@@ -89,24 +89,24 @@
   1. delete
     1. delete property vs set undefined
       ```javascript
-      var obj = {
-          foo: 'a',
-          bar: 'b'
-      };
-      obj.foo = undefined;
-      console.log(obj.foo);
-      
-      delete obj.bar;
-      console.log(obj.bar);
+        var obj = {
+            foo: 'a',
+            bar: 'b'
+        };
+        obj.foo = undefined;
+        console.log(obj.foo);
+        
+        delete obj.bar;
+        console.log(obj.bar);
       ```
-                  
-      1. configurable property
-        ```javascript
+
+    1. configurable property
+      ```javascript
         var foo = 'test';
         delete window.foo;
         window.bar = 'test';
         delete window.bar;
-        ```
+      ```
 
   1. enumeration
     1. in
