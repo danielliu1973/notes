@@ -72,6 +72,5 @@
   }
   ```
 
-1. Highlights in resume
 1. Explain what is MVC
-1. Do the quiz. [http://www.w3schools.com/quiztest/quiztest.asp?qtest=JavaScript](http://www.w3schools.com/quiztest/quiztest.asp?qtest=JavaScript)
+
