@@ -1,3 +1,4 @@
+1. quiz [http://www.w3schools.com/quiztest/quiztest.asp?qtest=JavaScript](http://www.w3schools.com/quiztest/quiztest.asp?qtest=JavaScript)
 1. **server-side rendering vs client-side rendering**
 1. IDE
 	1. WebStorm: [https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/)
