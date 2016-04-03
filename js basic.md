@@ -4,6 +4,8 @@
   1. value comparison, **== vs ===**, != vs !==
   
       [Equality_comparisons_and_sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+      1. always use === and !==
+      1. must use === or !== to compare null, undefine, '' etc.
   
   1. operator +, -, *, /, %, ++, --, |, &
   1. function
