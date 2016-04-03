@@ -29,6 +29,7 @@
       var person = {};
       person.name = 'Tom';
       person.age = 10;
+      person['date-of-birth'] = new Date();
     ```
 
   1. array
