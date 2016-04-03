@@ -286,11 +286,3 @@
         victoria.myFunc = myFunc;
     })(victoria || (victoria = {}));
     ```
-
-1. JavaScript
-    1. var me = this, ths = this, self = this;
-    1. !!foo
-    1. foo = foo || {}
-    1. forEach
-    1. deferred/promise pattern
-    1. nested function
