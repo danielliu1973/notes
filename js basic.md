@@ -177,6 +177,16 @@
     ```
 
   1. arguments
+    ```javascript
+      function(p1, p2, p3) {
+        var p1 = arguments[0],
+          p2 = arguments[1],
+          p3 = arguments[0];
+          
+          // ...
+      }
+    ```
+
   1. **hoisting**
   1. **scope**
     1. what’s this?
