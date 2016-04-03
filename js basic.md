@@ -118,18 +118,6 @@
       ```
 
       1. Object.keys
-  1. Misc
-    1. namespace: avoid global variables
-    1. doc only [example](http://docs.sencha.com/extjs/4.2.2/source/Label2.html#Ext-form-Label)
-      ```javascript
-      var foo = {
-          id: 0,
-
-          /**
-           * name
-           */
-      };
-      ```
 
 1. Array
   1. special object, automatically maintain length property
