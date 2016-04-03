@@ -1,12 +1,8 @@
-#Go over
-1. AngularJS
-1. 2-way data binding
 
 #Resources
 1. [https://www.airpair.com/angularjs/posts/top-10-mistakes-angularjs-developers-make](https://www.airpair.com/angularjs/posts/top-10-mistakes-angularjs-developers-make)
 1. [https://css-tricks.com/centering-css-complete-guide/](https://css-tricks.com/centering-css-complete-guide/)
 
-#New
 1. Bootstrap CSS [http://getbootstrap.com/](http://getbootstrap.com/)
 	1. Customize
 1. UI library for AngularJS
@@ -43,3 +39,4 @@
 		1. share data between controllers
 1. Directives [https://docs.angularjs.org/guide/directive](https://docs.angularjs.org/guide/directive)
 1. Filters
+
