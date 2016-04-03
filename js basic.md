@@ -75,11 +75,13 @@
           d.prototype = new __();
       };
       ```
+
   1. JSON: serialization
     ```javascript
       JSON.stringify();
       JSON.parse();
     ```
+
   1. retrieval & set
     1. **property name: $, _, a-z, A-Z, 0-9**
     1. **person.name, person[‘name’]**
