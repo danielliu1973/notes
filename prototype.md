@@ -37,6 +37,21 @@
         var p = new Person('Tom', 20);
         ```
         
+        ```javascript
+        console.log(person.getName());
+
+        function Cat(type) {
+            this.type = type;
+            this.name = 'cat:' + type;
+        }
+        
+        var cat = new Cat('ttt');
+        cat.getName = person.getName;
+        console.log(cat.getName());
+        
+        Person.prototype.getName.call(cat);
+        ```
+        
     1. inheritance
 
         ```javascript
