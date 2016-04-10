@@ -14,11 +14,27 @@
         Person.prototype.getAge = function() {
             return this.age;
         };
-        var person = new Person('Aaron', 18);
+        var person = new Person('Tom', 18);
         var person = {};
-        Person.call(person, 'Aaron', 18);
+        Person.call(person, 'Tom', 18);
         person.__proto__ = Person.prototype;
-        var p2 = new Person('Ding', 20);
+        var p2 = new Person('Jerry', 20);
+        ```
+        
+        ```javascript
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+            
+            this.getName = function() {
+                return this.name;
+            };
+            
+            this.getAge = function() {
+                return this.age;
+            };
+        }
+        var p = new Person('Tom', 20);
         ```
         
     1. inheritance
