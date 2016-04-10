@@ -56,9 +56,6 @@
 
         ```javascript
         var __extends = function (child, parent) {
-            for (var p in parent) {
-                if (parent.hasOwnProperty(p)) child[p] = parent[p];
-            }
             function __() { this.constructor = child; }
             __.prototype = parent.prototype;
             child.prototype = new __();
