@@ -9,3 +9,4 @@
   1. github
   1. [prototype.md](https://github.com/aaronding/notes/blob/master/prototype.md)
   1. [closure.md](https://github.com/aaronding/notes/blob/master/closure.md)
+  1. angularguide @ github
