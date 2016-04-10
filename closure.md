@@ -19,8 +19,10 @@ Closures are functions that refer to independent (free) variables.
 
     var add5 = makeAdder(5);
     add5(3);
+    add5(6);
+    
     var add10 = makeAdder(10);
-    add10(8);
+    add10(7);
 
     function foo(bar) {
         // ...
