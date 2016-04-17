@@ -131,6 +131,29 @@ alert(foo.call(obj) == obj);
 
 14.
 ```javascript
+function highest(){ 
+  return arguments.sort(function(a, b) {
+    return b - a; 
+  }); 
+}
+```
+
+15
+```javascript
+Object.prototype.keys = function() {
+  var keys = []; 
+  for (var i in this) { 
+    keys.push(i);
+  }
+  return keys; 
+};
+
+var obj = { a: 1, b: 2, c: 3 };
+alert(obj.keys());
+```
+
+16.
+```javascript
 isC2LSupported: function() {
   if(window.PsNavigate ||
     (window.interOp && window.interOp.postMessage) ||
