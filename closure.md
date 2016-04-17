@@ -88,3 +88,52 @@ Closures are functions that refer to independent (free) variables.
         }());
     }
     ```
+
+1. private members
+```javascript
+function X() {
+  function a() {
+    alert('a');
+  }
+  
+  this.b = a;
+}
+
+
+X.prototype.f = function() {
+  alert(this.b());
+};
+
+new X().f();
+```
+
+```javascript
+var addressBook = (function(){
+    var storage = new LocalStorageStore(),
+        contacts = [];
+    return {
+        getAll: function() {
+            return contacts;
+        },
+        add: function(contact) {
+            contacts.push(contact);
+        },
+        remove: function(idx) {
+            contacts.splice(idx, 1);
+        },
+        sort: function(key, desc) {
+            contacts.sort(function(c1, c2) {
+                return desc ? (c1[key] < c2[key]) : (c1[key] > c2[key]);
+            });
+        },
+        load: function() {
+            return storage.load().then(function(data) {
+                contacts = JSON.parse(data);
+            });
+        },
+        save: function() {
+            return storage.save(JSON.stringify(contacts));
+        }
+    };
+}());
+```
