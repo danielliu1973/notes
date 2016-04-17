@@ -74,6 +74,12 @@
   ```
 
 2. script tag
+
+  cb.js
+  ```javascript
+  callback('{"success": true, "data": "operation succeeded!"}');
+  ```
+  
   ```html
   <!DOCTYPE html>
   <html lang="en">
