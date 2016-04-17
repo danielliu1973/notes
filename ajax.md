@@ -105,6 +105,35 @@
   </body>
   </html>
   ```
-  
+
 3. image, style sheet
+
 4. XMLHttpRequest
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+      <script>
+          function load() {
+              var xhr = new XMLHttpRequest();
+              xhr.onreadystatechange = function() {
+                  if (xhr.readyState == 4 && xhr.status == 200) {
+                      var response = JSON.parse(xhr.responseText);
+                      if (response.success) {
+                          document.getElementById("content").innerHTML = response.data;
+                      }
+                  }
+              };
+              xhr.open("GET", "data.json", true);
+              xhr.send();
+          }
+      </script>
+  </head>
+  <body>
+  <div id="content"></div>
+  <button onclick="load();">Submit</button>
+  </body>
+  </html>
+  ```
