@@ -90,66 +90,66 @@ Closures are functions that refer to independent (free) variables.
     ```
 
 1. private members
-```javascript
-function X() {
-  function a() {
-    alert('a');
+  ```javascript
+  function X() {
+    function a() {
+      alert('a');
+    }
+    
+    this.b = a;
   }
   
-  this.b = a;
-}
-
-X.prototype.f = function() {
-  alert(this.b());
-};
-
-new X().f();
-```
-
-```javascript
-function Counter() {
-  var count = 0;
-  this.get = function() {
-    return count;
+  X.prototype.f = function() {
+    alert(this.b());
   };
-  this.add = function() {
-    count++;
-    return this;
-  };
-}
-
-var c1 = new Counter();
-c1.add().add();
-c1.get();  // returns 2
-
-var c2 = new Counter();
-c2.add();  // returns 1
-```
-
-```javascript
-var c1 = {
-    count: 0;
-    add: function() {
-        this.count++;
-        return this;
-    },
-    get: function() {
-        return this.count;
-    }
-};
-```
-
-```javascript
-var c1 = (function(){
+  
+  new X().f();
+  ```
+  
+  ```javascript
+  function Counter() {
     var count = 0;
-    return {
-        add: function(contact) {
-            count++;
-            return this;
-        },
-        get: function(idx) {
-            return count;
-        }
+    this.get = function() {
+      return count;
     };
-}());
-```
+    this.add = function() {
+      count++;
+      return this;
+    };
+  }
+  
+  var c1 = new Counter();
+  c1.add().add();
+  c1.get();  // returns 2
+  
+  var c2 = new Counter();
+  c2.add();  // returns 1
+  ```
+  
+  ```javascript
+  var c1 = {
+      count: 0;
+      add: function() {
+          this.count++;
+          return this;
+      },
+      get: function() {
+          return this.count;
+      }
+  };
+  ```
+  
+  ```javascript
+  var c1 = (function(){
+      var count = 0;
+      return {
+          add: function(contact) {
+              count++;
+              return this;
+          },
+          get: function(idx) {
+              return count;
+          }
+      };
+  }());
+  ```
