@@ -1,5 +1,12 @@
 1. iframe
 
+  data.json
+  ```json
+  {
+    "success": true,
+    "data": "operation succeeded!"
+  }
+  ```
   get
   ```html
   <!DOCTYPE html>
