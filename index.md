@@ -10,3 +10,8 @@
   1. [prototype.md](https://github.com/aaronding/notes/blob/master/prototype.md)
   1. [closure.md](https://github.com/aaronding/notes/blob/master/closure.md)
   1. angularguide @ github
+3. lesson 3
+  1. [closure.md](https://github.com/aaronding/notes/blob/master/closure.md)
+  2. [quiz.md](https://github.com/aaronding/notes/blob/master/quiz.md)
+  3. [hide.md](https://github.com/aaronding/notes/blob/master/hide.md)
+  4. [ajax.md](https://github.com/aaronding/notes/blob/master/ajax.md)
