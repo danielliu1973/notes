@@ -72,3 +72,39 @@
   </body>
   </html>
   ```
+
+2. script tag
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+      <script>
+          function load() {
+              var content = document.getElementById('content');
+              content.innerHTML = 'Loading...';
+  
+              var script = document.createElement('script');
+              script.src = 'cb.js';
+              document.body.appendChild(script);
+          }
+  
+          function callback(response) {
+              response = JSON.parse(response);
+              if (response.success) {
+                  document.getElementById('content').innerHTML = response.data;
+              }
+          }
+  
+      </script>
+  </head>
+  <body>
+  <div id="content"></div>
+  <button onclick="load();">Submit</button>
+  </body>
+  </html>
+  ```
+  
+3. image, style sheet
+4. XMLHttpRequest
