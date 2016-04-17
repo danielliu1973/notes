@@ -99,12 +99,30 @@ function X() {
   this.b = a;
 }
 
-
 X.prototype.f = function() {
   alert(this.b());
 };
 
 new X().f();
+```
+
+```javascript
+function Counter() {
+  var count = 0;
+  this.get = function() {
+    return count;
+  };
+  this.add = function() {
+    count++;
+    return this;
+  };
+}
+
+var c1 = new Counter();
+c1.add().add();
+
+var c2 = new Counter();
+c2.add();
 ```
 
 ```javascript
