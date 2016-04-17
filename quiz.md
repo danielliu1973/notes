@@ -67,3 +67,15 @@ var timer = setInterval(function(){
   } 
 }, 100);
 ```
+
+9.
+```javascript
+isC2LSupported: function() {
+		if(window.PsNavigate ||
+		  (window.interOp && window.interOp.postMessage) ||
+		  (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.interOp && window.webkit.messageHandlers.interOp.postMessage)) {
+			return true;
+		}
+		return false;
+}
+```
