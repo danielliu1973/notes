@@ -127,31 +127,28 @@ c2.add();  // returns 1
 ```
 
 ```javascript
-var addressBook = (function(){
-    var storage = new LocalStorageStore(),
-        contacts = [];
+var c1 = {
+    count: 0;
+    add: function() {
+        this.count++;
+        return this;
+    },
+    get: function() {
+        return this.count;
+    }
+};
+```
+
+```javascript
+var c1 = (function(){
+    var count = 0;
     return {
-        getAll: function() {
-            return contacts;
-        },
         add: function(contact) {
-            contacts.push(contact);
+            count++;
+            return this;
         },
-        remove: function(idx) {
-            contacts.splice(idx, 1);
-        },
-        sort: function(key, desc) {
-            contacts.sort(function(c1, c2) {
-                return desc ? (c1[key] < c2[key]) : (c1[key] > c2[key]);
-            });
-        },
-        load: function() {
-            return storage.load().then(function(data) {
-                contacts = JSON.parse(data);
-            });
-        },
-        save: function() {
-            return storage.save(JSON.stringify(contacts));
+        get: function(idx) {
+            return count;
         }
     };
 }());
