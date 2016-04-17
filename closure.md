@@ -120,9 +120,10 @@ function Counter() {
 
 var c1 = new Counter();
 c1.add().add();
+c1.get();  // returns 2
 
 var c2 = new Counter();
-c2.add();
+c2.add();  // returns 1
 ```
 
 ```javascript
