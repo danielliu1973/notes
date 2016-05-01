@@ -145,32 +145,44 @@
   ```
 
 5. AngularJS
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Angular JS</title>
-</head>
-<script>
-    angular.module('null', []).run(function($http) {
-        $http({
-            method: 'GET',
-            url: 'http://www.google.ca/someUrl'
-        }).then(function(response) {
-            alert('successful')
-        }, function(response) {
-            alert('failed')
-        });
-    });
+  ```html
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Angular JS</title>
+  </head>
+  <script>
+      angular.module('null', []).run(function($http) {
+          $http({
+              method: 'GET',
+              url: 'http://www.google.ca/someUrl'
+          }).then(function(response) {
+              alert('successful')
+          }, function(response) {
+              alert('failed')
+          });
+      });
+  
+      angular.element(document).ready(function() {
+          angular.bootstrap(document.body, ['null']);
+      });
+  </script>
+  <body>
+  </body>
+  </html>
+  ```
 
-    angular.element(document).ready(function() {
-        angular.bootstrap(document.body, ['null']);
-    });
-</script>
-<body>
-</body>
-</html>
-```
+6. CORS
+  1. CORS Request requires server support
+    
+    ```
+    Access-Control-Allow-Origin: http://api.bob.com
+    Access-Control-Allow-Credentials: true
+    Access-Control-Expose-Headers: FooBar
+    ```
+  2. embedded iframe
+  3. alternative jsonp
+  4. XDomainRequest
