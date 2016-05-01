@@ -64,3 +64,4 @@
 
 1. Explain what is MVC
 
+1. [http://www.diveintojavascript.com/tutorials/web-storage-tutorial-creating-an-address-book-application?from=groupmessage&isappinstalled=0](http://www.diveintojavascript.com/tutorials/web-storage-tutorial-creating-an-address-book-application?from=groupmessage&isappinstalled=0)
