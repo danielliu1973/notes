@@ -8,12 +8,17 @@
   1. $scope [https://docs.angularjs.org/guide/scope](https://docs.angularjs.org/guide/scope)
 1. Module [https://docs.angularjs.org/guide/module](https://docs.angularjs.org/guide/module)
 1. Dependency Injection [https://docs.angularjs.org/guide/di](https://docs.angularjs.org/guide/di)
-  1. $injector
 1. deferred promise pattern
   1. common interview questions
   1. $http
   1. $q
-1. $location [https://docs.angularjs.org/guide/$location](https://docs.angularjs.org/guide/$location)
+1. Directives [https://docs.angularjs.org/guide/directive](https://docs.angularjs.org/guide/directive)
+  1. matching
+  2. attribute vs element
+  3. template-expanding directive
+  4. extends scope and isolates scope
+  5. link vs controller
+1. Filters
 1. Factory(, Service, Value, Constant, Provider) [https://docs.angularjs.org/guide/providers](https://docs.angularjs.org/guide/providers)
   1. singleton
   1. can be anything
@@ -24,9 +29,7 @@
   1. usage
     1. util
     1. share data between controllers
-1. Directives [https://docs.angularjs.org/guide/directive](https://docs.angularjs.org/guide/directive)
-1. Filters
-
+1. $location [https://docs.angularjs.org/guide/$location](https://docs.angularjs.org/guide/$location)
 1. [https://www.airpair.com/angularjs/posts/top-10-mistakes-angularjs-developers-make](https://www.airpair.com/angularjs/posts/top-10-mistakes-angularjs-developers-make)
 
 1. Bootstrap CSS [http://getbootstrap.com/](http://getbootstrap.com/)
