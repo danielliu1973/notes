@@ -186,3 +186,5 @@
   2. embedded iframe
   3. alternative jsonp
   4. XDomainRequest
+
+7. GET vs POST
