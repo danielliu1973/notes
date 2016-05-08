@@ -262,3 +262,22 @@ processor.on('done', function (event, records) {
 });
 finder.run([1,2]);
 ```
+
+19.
+```javascript
+function async(your_function, callback) {
+    setTimeout(function() {
+        your_function();
+        if (callback) {callback();}
+    }, 0);
+}
+
+// 1
+console.log(1);
+async(function() {console.log('x')}, null);
+console.log(2);
+console.log(3);
+
+// 2
+async(function() {console.log('x');}, function() {console.log(1);});
+```
