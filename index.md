@@ -15,3 +15,14 @@
   2. [quiz.md](https://github.com/aaronding/notes/blob/master/quiz.md)
   3. [hide.md](https://github.com/aaronding/notes/blob/master/hide.md)
   4. [ajax.md](https://github.com/aaronding/notes/blob/master/ajax.md)
+4. lesson 4
+5. lesson 5
+ 	1. ID vs name
+	2. Chaining calls
+	3. Reduce/promise chain
+	4. $http, service
+	5. $apply
+	6. Multi-thread & async
+	7. Multi controller
+	8. $rootScope, global variable
+	9. Scope watch/emit
