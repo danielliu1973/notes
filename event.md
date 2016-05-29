@@ -36,38 +36,38 @@
     ```
     
   5. useCapture & bubble [http://jsfiddle.net/ading/72ghycxz/](http://jsfiddle.net/ading/72ghycxz/)
-  ```html
-  <div id="parent" style="border: 10px solid red" onclick="alert(1)">
-    <div id="children" style="border: 10px solid black">
-        Click
+    ```html
+    <div id="parent" style="border: 10px solid red" onclick="alert(1)">
+      <div id="children" style="border: 10px solid black">
+          Click
+      </div>
     </div>
-  </div>
-  ```
+    ```
+    
+    ```javascript
+    var parent = document.getElementById('parent'),
+      children = document.getElementById('children');
   
-  ```javascript
-  var parent = document.getElementById('parent'),
-    children = document.getElementById('children');
-
-  children.addEventListener('click', function (e) { 
-      alert('Children Capture on ' + e.currentTarget.id);
-      // e.stopPropagation();
-  }, true);
-  
-  children.addEventListener('click', function (e) { 
-      alert('Children Bubble on ' + e.currentTarget.id);
-      // e.stopPropagation();
-  }, false);
-  
-  parent.addEventListener('click', function (e) { 
-      alert('Parent Capture on ' + e.currentTarget.id);
-      // e.stopPropagation();
-  }, true);
-  
-  parent.addEventListener('click', function (e) { 
-      alert('Parent Bubble on ' + e.currentTarget.id);
-      // e.stopPropagation();
-  }, false);
-  ```
+    children.addEventListener('click', function (e) { 
+        alert('Children Capture on ' + e.currentTarget.id);
+        // e.stopPropagation();
+    }, true);
+    
+    children.addEventListener('click', function (e) { 
+        alert('Children Bubble on ' + e.currentTarget.id);
+        // e.stopPropagation();
+    }, false);
+    
+    parent.addEventListener('click', function (e) { 
+        alert('Parent Capture on ' + e.currentTarget.id);
+        // e.stopPropagation();
+    }, true);
+    
+    parent.addEventListener('click', function (e) { 
+        alert('Parent Bubble on ' + e.currentTarget.id);
+        // e.stopPropagation();
+    }, false);
+    ```
 
   6. custom event [https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events)
 
