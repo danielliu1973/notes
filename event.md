@@ -70,8 +70,24 @@
   ```
 
   6. custom event [https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events)
+
+1. scope/context
+  ```html
+  <button onclick="save(event, this)">Save</button>
+  ```
+  ```javascript
+  button.onclick = function(event) {
+    save(event, this);  // this === button
+  };
+  ```
+
+1. event object
+  ```javascript
+  preventDefault
+  stopPropagation
   
-1. event object & scope
+  return false
+  ```
 
 1. performance
   1. avoid too many event handlers
