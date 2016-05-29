@@ -71,6 +71,31 @@
 
   6. custom event [https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events)
   
+1. event object & scope
+
+1. performance
+  1. avoid too many event handlers
+  ```html
+  <div id="buttons">
+    <button id="ok">ok</button>
+    <button id="cancel">cancel</button>
+  </div>
+  ```
+  ```javascript
+  document.getElementById('buttons').onclick = function (event) {
+    var id = event.target.id;
+    if (id === 'ok') {
+      alert('do ok');
+    } else if (id === 'cancel') {
+      alert('do cancel');
+    }
+  };
+  ```
+  
+  1. setTimeout
+
+1. [good artice](https://www.smashingmagazine.com/2013/11/an-introduction-to-dom-events/)
+
 1. AngularJS event [https://docs.angularjs.org/guide/scope](https://docs.angularjs.org/guide/scope)
 
     ```javascript
