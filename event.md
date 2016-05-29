@@ -107,11 +107,41 @@
   ```
 
 1. event object
-  ```javascript
-  preventDefault
-  stopPropagation
+  1. preventDefault
+    ```html
+    <input type="checkbox" id="mycheck">check
+    ```
+    ```javascript
+    function go(event) {
+      event.preventDefault();
+    };
+    //document.getElementById('myanchor').addEventListener('click', go);
+    document.getElementById('mycheck').addEventListener('click', go);
+    
+    stopPropagation
   
-  return false
+    return false
+    ```
+  ```html
+  <a id="myanchor" href="#">go</a>
+  ```
+  ```javascript
+    document.getElementById('myanchor').addEventListener('click', function(event) {
+      alert('do my stuff');
+      event.preventDefault();
+    });
+  ```
+  ```html
+  <input id="myname">
+  ```
+  ```javascript
+  document.getElementById('myname').addEventListener('keydown', function(event) {
+    event = event || window.event;
+    var charCode = (typeof event.which == "undefined") ? event.keyCode : event.which;
+    if (!((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122))) {
+      event.preventDefault();
+    }
+  });
   ```
 
 1. performance
