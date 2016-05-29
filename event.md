@@ -73,11 +73,36 @@
 
 1. scope/context
   ```html
+  <button onclick="save()">Save</button>
+  ```
+  not equals to
+  ```javascript
+  button.onclick = function() {
+    save();
+  };
+  ```
+  
+  ```html
   <button onclick="save(event, this)">Save</button>
   ```
+  equals to
   ```javascript
   button.onclick = function(event) {
     save(event, this);  // this === button
+  };
+  ```
+  
+  ```javascript
+  var person = {
+    name: 'Tom',
+    sayName: function() {
+      return this.name;
+    }
+  };
+  button.onclick = person.sayName;
+  button.onclick = person.sayName.bind(person);
+  button.onclick = function() {
+    person.sayName();
   };
   ```
 
