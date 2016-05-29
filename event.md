@@ -176,6 +176,34 @@
   ```
   
   1. setTimeout
+  ```html
+  <input type="text" id="myinput">
+  ```
+  ```javascript
+  var waitForFinalEvent = (function () {
+    var timers = {};
+    return function (callback, ms, uniqueId) {
+      if (!uniqueId) {
+        uniqueId = "Don't call this twice without a uniqueId";
+      }
+      if (timers[uniqueId]) {
+        clearTimeout (timers[uniqueId]);
+      }
+      timers[uniqueId] = setTimeout(callback, ms);
+    };
+  })();
+  
+  document.getElementById('myinput').addEventListener('keydown', function(event) {
+    waitForFinalEvent(function() {
+      console.log('input finished');
+    }, 500, 'input');
+  });
+  window.addEventListener('resize', function() {
+    waitForFinalEvent(function() {
+      console.log('click body');
+    }, 500, 'windowresize');
+  });
+  ```
 
 1. [good artice](https://www.smashingmagazine.com/2013/11/an-introduction-to-dom-events/)
 
