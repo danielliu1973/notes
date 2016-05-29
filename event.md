@@ -106,22 +106,18 @@
   };
   ```
 
-1. event object
-  1. preventDefault
-    ```html
-    <input type="checkbox" id="mycheck">check
-    ```
-    ```javascript
-    function go(event) {
-      event.preventDefault();
-    };
-    //document.getElementById('myanchor').addEventListener('click', go);
-    document.getElementById('mycheck').addEventListener('click', go);
-    
-    stopPropagation
+1. event.preventDefault & return false
+  ```html
+  <input type="checkbox" id="mycheck">check
+  ```
+  ```javascript
+  function go(event) {
+    event.preventDefault();
+  };
+  //document.getElementById('myanchor').addEventListener('click', go);
+  document.getElementById('mycheck').addEventListener('click', go);
+  ```
   
-    return false
-    ```
   ```html
   <a id="myanchor" href="#">go</a>
   ```
@@ -144,7 +140,23 @@
   });
   ```
 
+1. event.stopPropagation & return false
+  ```html
+  <a href="#" id="myanchor">go</a>
+  ```
+  ```javascript
+  document.getElementById('myanchor').addEventListener('click', function(event) {
+    alert('click anchor');
+    event.stopPropagation();
+    return false;
+  });
+  document.body.addEventListener('click', function() {
+    alert('click body');
+  });
+  ```
+  
 1. performance
+  1. cancel bubble
   1. avoid too many event handlers
   ```html
   <div id="buttons">
