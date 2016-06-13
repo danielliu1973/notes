@@ -21,13 +21,57 @@
             {'id': 'age', 'help': 'Your age (you must be over 16)'}
         ];
 
-        for (let i = 0; i < helpText.length; i++) {
-            // var item = helpText[i];
-            // let item = helpText[i];
-            document.getElementById(helpText[i].id).onfocus = function() {
-                showHelp(helpText[i].help);
-            }
-        }
+        // 1.
+        // for (var i = 0; i < helpText.length; i++) {
+        //     document.getElementById(helpText[i].id).onfocus = function() {
+        //         showHelp(helpText[i].help);
+        //     }
+        // }
+
+        // 2.
+        // for (var i = 0; i < helpText.length; i++) {
+        //     var item = helpText[i];
+        //     document.getElementById(item.id).onfocus = function() {
+        //         showHelp(item.help);
+        //     }
+        // }
+
+        // 3. fixed, make closure to resolve the problem
+        // for (var i = 0; i < helpText.length; i++) {
+        //     var item = helpText[i];
+        //     document.getElementById(item.id).onfocus = (function() {
+        //         var help = item.help;
+        //         return function() {
+        //             showHelp(help);
+        //         };
+        //     }());
+        // }
+
+        // 4. fixed, use IIFE
+        // for (var i = 0; i < helpText.length; i++) {
+        //     document.getElementById(helpText[i].id).onfocus = (function(k) {
+        //         return function() {
+        //             showHelp(helpText[k].help);
+        //         };
+        //     }(i));
+        // }
+        
+        // 5. fixed, use let to avoid hoisting
+        // for (let i = 0; i < helpText.length; i++) {
+        //     document.getElementById(helpText[i].id).onfocus = function() {
+        //         showHelp(helpText[i].help);
+        //     }
+        // }
+
+        // 6. fixed, map makes it easy
+        // helpText.map(function(c){
+        //     document.getElementById(c.id).onfocus = function() {
+        //         showHelp(c.help);
+        //     }
+        // });
+
+        // 7. fixed, ES6 makes life simple
+        helpText.map(c => {document.getElementById(c.id).onfocus = () => showHelp(c.help);});
     }
 
     setupHelp();
