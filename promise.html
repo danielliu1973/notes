@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+</head>
+<body>
+</body>
+<script type="text/javascript">
+	function load(){
+		console.log('2');
+		return new Promise(function(resolve, reject){
+			console.log('3')
+			resolve();
+		});
+	}
+	console.log('1');
+	load().then(
+		function(){
+			console.log('5');
+			return new Promise(function(resolve, reject){
+				console.log('6')
+				resolve();
+			});
+		},function(){
+
+		}
+	).then(
+		function(){
+			console.log('7')
+		},
+		function(){
+
+		}
+	);
+	console.log('4');
+</script>
+</html>
